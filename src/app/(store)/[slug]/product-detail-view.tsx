@@ -152,7 +152,7 @@ export function ProductDetailView({
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink render={<Link href="/shop" />}>Shop</BreadcrumbLink>
+            <BreadcrumbLink render={<Link href="/shop" />}>Catálogo</BreadcrumbLink>
           </BreadcrumbItem>
           {categoryAncestors.map((cat, idx) => {
             const isLast = idx === categoryAncestors.length - 1
@@ -236,40 +236,7 @@ export function ProductDetailView({
             </div>
           )}
 
-          {/* Quantity + Add to Cart */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-            <div className="flex items-center gap-4">
-              <QuantitySelector
-                quantity={quantity}
-                onQuantityChange={setQuantity}
-                max={selectedVariant.inventory.quantity || 99}
-              />
-              <Button
-                variant="outline"
-                size="icon"
-                aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
-                onClick={handleToggleWishlist}
-              >
-                <Heart className={`h-4 w-4 ${isWishlisted ? "fill-wishlist text-wishlist" : ""}`} />
-              </Button>
-            </div>
-            <Button
-              size="lg"
-              className="w-full sm:flex-1"
-              disabled={!inStock}
-              onClick={handleAddToCart}
-            >
-              <ShoppingBag className="mr-2 h-4 w-4" />
-              {inStock ? "Add to Cart" : "Out of Stock"}
-            </Button>
-          </div>
-
-          {!inStock && (
-            <p className="mt-2 text-sm text-destructive">
-              This item is currently out of stock.
-            </p>
-          )}
-
+          {/* Ocultado temporalmente: Carrito, Selector de cantidad y Wishlist */}
           <Separator className="my-6" />
 
           <TrustSignals />
@@ -292,7 +259,7 @@ export function ProductDetailView({
       {relatedProducts.length > 0 && (
         <section className="mt-16">
           <h2 className="text-xl font-bold tracking-tight">
-            You may also like
+            También te puede interesar
           </h2>
           <div className="mt-6">
             <ProductGrid products={relatedProducts} />

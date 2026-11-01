@@ -1,50 +1,35 @@
 import type { Metadata } from "next"
+import { siteConfig } from "@/lib/config"
 
 export const metadata: Metadata = {
-  title: "Returns & Refunds",
-  description: "Our return and refund policy. Easy 30-day returns.",
+  title: `Garantías y Devoluciones | ${siteConfig.name}`,
+  description: `Políticas de garantía de hardware y devoluciones de ${siteConfig.name}.`,
 }
 
 export default function ReturnsPolicyPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold tracking-tight">
-        Returns & Refunds
-      </h1>
-      <div className="mt-8 space-y-6 text-muted-foreground">
+      <h1 className="text-3xl font-bold tracking-tight">Garantías y Devoluciones</h1>
+      <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
         <h2 className="text-xl font-semibold text-foreground">
-          30-Day Return Policy
+          Garantía de Hardware
         </h2>
         <p>
-          We want you to be completely satisfied with your purchase. If you're
-          not happy with your order, you can return it within 30 days of
-          delivery for a full refund.
+          En <strong>{siteConfig.name}</strong> garantizamos que todos nuestros productos y componentes son completamente originales y nuevos. Si algún producto presenta un defecto de fabricación dentro del periodo de garantía, gestionamos el cambio o reparación directa según las políticas de cada fabricante.
         </p>
 
         <h2 className="text-xl font-semibold text-foreground">
-          Return Conditions
+          Plazo para Devoluciones o Reclamaciones
         </h2>
-        <ul className="list-inside list-disc space-y-2">
-          <li>Items must be unused and in their original packaging</li>
-          <li>Tags must be attached</li>
-          <li>Sale items are final sale and cannot be returned</li>
-          <li>Gift cards are non-refundable</li>
-        </ul>
+        <p>
+          Dispones de hasta 30 días posteriores a la recepción para reportar cualquier disconformidad o solicitar una devolución. El producto debe conservar su empaque original, manuales, accesorios y sellos de fábrica intactos.
+        </p>
 
         <h2 className="text-xl font-semibold text-foreground">
-          How to Return
+          Proceso de Gestión
         </h2>
-        <ol className="list-inside list-decimal space-y-2">
-          <li>Log into your account and go to Order History</li>
-          <li>Select the order and items you wish to return</li>
-          <li>Print the prepaid return label</li>
-          <li>Pack items securely and drop off at any shipping location</li>
-        </ol>
-
-        <h2 className="text-xl font-semibold text-foreground">Refunds</h2>
         <p>
-          Refunds are processed within 5-7 business days of receiving your
-          return. The refund will be credited to your original payment method.
+          Para iniciar una solicitud de garantía o devolución, contáctanos a través de nuestro correo oficial <strong>{siteConfig.contact.email}</strong> indicando tu número de pedido, descripción del inconveniente y fotografías del producto.
         </p>
       </div>
     </div>

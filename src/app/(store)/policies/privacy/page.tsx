@@ -1,53 +1,39 @@
 import type { Metadata } from "next"
+import { siteConfig } from "@/lib/config"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "How we collect, use, and protect your personal information.",
+  title: `Política de Privacidad | ${siteConfig.name}`,
+  description: `Protección de datos y política de privacidad de ${siteConfig.name}.`,
 }
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold tracking-tight">Privacy Policy</h1>
-      <p className="mt-4 text-sm text-muted-foreground">
-        Last updated: January 1, 2025
-      </p>
-      <div className="mt-8 space-y-6 text-muted-foreground">
-        <h2 className="text-xl font-semibold text-foreground">
-          Information We Collect
-        </h2>
+      <h1 className="text-3xl font-bold tracking-tight">Política de Privacidad</h1>
+      <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
         <p>
-          We collect information you provide directly, such as your name, email
-          address, shipping address, and payment information when you make a
-          purchase. We also automatically collect certain information about your
-          device and browsing activity.
+          En <strong>{siteConfig.name}</strong> valoramos y respetamos tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos la información personal que nos proporcionas al navegar en nuestro sitio web o contactarnos.
         </p>
 
         <h2 className="text-xl font-semibold text-foreground">
-          How We Use Your Information
-        </h2>
-        <ul className="list-inside list-disc space-y-2">
-          <li>To process and fulfill your orders</li>
-          <li>To communicate with you about your orders</li>
-          <li>To send promotional emails (with your consent)</li>
-          <li>To improve our website and services</li>
-          <li>To detect and prevent fraud</li>
-        </ul>
-
-        <h2 className="text-xl font-semibold text-foreground">
-          Data Protection
+          Datos que Recopilamos
         </h2>
         <p>
-          We implement industry-standard security measures to protect your
-          personal information. Your payment data is processed securely and
-          never stored on our servers.
+          Podemos recopilar datos de contacto como nombre, dirección de correo electrónico, teléfono y dirección de entrega cuando solicitas información, cotizaciones o realizas consultas a través de nuestros formularios.
         </p>
 
-        <h2 className="text-xl font-semibold text-foreground">Your Rights</h2>
+        <h2 className="text-xl font-semibold text-foreground">
+          Uso de la Información
+        </h2>
         <p>
-          You have the right to access, update, or delete your personal
-          information at any time. Contact us at privacy@store.com with any
-          requests.
+          Utilizamos tu información exclusivamente para atender tus consultas, procesar cotizaciones, coordinar envíos de productos y mejorar nuestros servicios. No vendemos ni compartimos tu información personal con terceros para fines publicitarios.
+        </p>
+
+        <h2 className="text-xl font-semibold text-foreground">
+          Contacto de Privacidad
+        </h2>
+        <p>
+          Para cualquier duda sobre el tratamiento de tus datos, puedes comunicarte con nosotros a través de <strong>{siteConfig.contact.email}</strong>.
         </p>
       </div>
     </div>

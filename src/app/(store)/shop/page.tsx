@@ -25,8 +25,8 @@ export async function generateMetadata({
   const canonical = page > 1 ? `${siteConfig.url}/shop?page=${page}` : `${siteConfig.url}/shop`
 
   return {
-    title: "Shop",
-    description: "Browse our full collection of quality products.",
+    title: "Catálogo de Productos",
+    description: "Explora nuestra selección completa de laptops, computadoras y componentes de hardware.",
     alternates: { canonical },
   }
 }
@@ -73,13 +73,13 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
           <h1 className="text-3xl font-bold tracking-tight">
             {categorySlug
               ? categories.find((c) => c.slug === categorySlug)?.name ??
-                "Shop"
+                "Catálogo"
               : searchQuery
-                ? `Results for "${searchQuery}"`
-                : "All Products"}
+                ? `Resultados para "${searchQuery}"`
+                : "Todos los Productos"}
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            {pagination.total} {pagination.total === 1 ? "product" : "products"}
+            {pagination.total} {pagination.total === 1 ? "producto encontrado" : "productos encontrados"}
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
               : "border-border hover:border-foreground"
           }`}
         >
-          Shop All
+          Todos
         </Link>
         {categories.map((cat) => {
           return (

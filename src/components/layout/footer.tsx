@@ -44,22 +44,22 @@ function IconTikTok({ className }: { className?: string }) {
 
 const footerLinks = {
   shop: [
-    { name: "All Products", href: "/shop" },
-    { name: "All Brands", href: "/brands" },
-    { name: "New Arrivals", href: "/shop?sort=newest" },
-    { name: "Sale", href: "/shop?sale=true" },
+    { name: "Todos los Productos", href: "/shop" },
+    { name: "Laptops", href: "/laptops" },
+    { name: "Computadoras", href: "/computadoras" },
+    { name: "Componentes", href: "/componentes" },
+    { name: "Marcas", href: "/brands" },
   ],
   company: [
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
-    { name: "FAQ", href: "/faq" },
+    { name: "Nosotros", href: "/about" },
+    { name: "Contacto", href: "/contact" },
+    { name: "Preguntas Frecuentes", href: "/faq" },
   ],
   legal: [
-    { name: "Shipping Policy", href: "/policies/shipping" },
-    { name: "Returns & Refunds", href: "/policies/returns" },
-    { name: "Privacy Policy", href: "/policies/privacy" },
-    { name: "Terms of Service", href: "/policies/terms" },
+    { name: "Política de Envíos", href: "/policies/shipping" },
+    { name: "Garantías y Devoluciones", href: "/policies/returns" },
+    { name: "Política de Privacidad", href: "/policies/privacy" },
+    { name: "Términos de Servicio", href: "/policies/terms" },
   ],
 }
 
@@ -68,7 +68,7 @@ export function Footer() {
     <footer className="border-t bg-white">
       <div className="mx-auto max-w-[1440px] px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
-          {/* Brand */}
+          {/* Marca */}
           <div className="col-span-2">
             <Link href="/" className="text-xl font-semibold tracking-tight">
               {siteConfig.name}
@@ -78,9 +78,9 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Shop */}
+          {/* Tienda */}
           <div>
-            <h3 className="text-sm font-semibold">Shop</h3>
+            <h3 className="text-sm font-semibold">Catálogo</h3>
             <ul className="mt-4 space-y-2">
               {footerLinks.shop.map((link) => (
                 <li key={link.name}>
@@ -95,9 +95,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Información */}
           <div>
-            <h3 className="text-sm font-semibold">Company</h3>
+            <h3 className="text-sm font-semibold">Información</h3>
             <ul className="mt-4 space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -134,17 +134,7 @@ export function Footer() {
 
         <div className="flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted-foreground">
-            &copy; {siteConfig.copyrightYear} {siteConfig.name}. All rights reserved.
-            <br className="sm:hidden" />
-            {" "}Design by{" "}
-            <a
-              href="https://epicdesignlabs.com"
-              target="_blank"
-              rel="noopener"
-              className="underline hover:text-foreground"
-            >
-              Epic Design Labs
-            </a>
+            &copy; {siteConfig.copyrightYear} {siteConfig.name}. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Twitter">
@@ -158,9 +148,6 @@ export function Footer() {
             </a>
             <a href="#" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="YouTube">
               <IconYouTube className="h-4 w-4" />
-            </a>
-            <a href="#" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="TikTok">
-              <IconTikTok className="h-4 w-4" />
             </a>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default async function StoreLayout({
         {children}
       </main>
       <Footer />
-      <CartDrawer />
+      {/* <CartDrawer /> Ocultado temporalmente */}
       <BackToTop />
     </>
   )

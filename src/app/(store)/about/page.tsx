@@ -1,87 +1,87 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { siteConfig } from "@/lib/config"
+import { ShieldCheck, Cpu, Headphones, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About",
+  title: `Sobre Nosotros | ${siteConfig.name}`,
   description:
-    "Learn about the Next.js Ecommerce Starter template and Epic Design Labs, the team behind it.",
+    `Conoce más sobre ${siteConfig.name}, tu aliado en tecnología, laptops, computadoras y componentes de hardware.`,
 }
 
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold tracking-tight">About This Starter</h1>
-      <div className="mt-8 space-y-6 text-muted-foreground">
+      <h1 className="text-3xl font-bold tracking-tight">Sobre {siteConfig.name}</h1>
+      <p className="mt-2 text-lg text-muted-foreground">
+        Pasión por la tecnología, rendimiento sin límites y garantía en cada componente.
+      </p>
+
+      <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
         <p>
-          The Next.js Ecommerce Starter is a free, open-source template designed
-          to give developers and businesses a production-ready foundation for
-          building modern online stores. It&apos;s built with Next.js, Tailwind CSS,
-          and shadcn/ui — and it&apos;s designed to connect to any checkout or
-          payment system.
+          En <strong>{siteConfig.name}</strong> nos especializamos en la comercialización, asesoría y distribución de tecnología de punta. Desde laptops para gaming y creación de contenido, hasta estaciones de trabajo y componentes individuales para entusiastas del hardware.
         </p>
         <p>
-          Whether you&apos;re a developer looking for a clean starting point or a
-          business that needs a custom storefront, this template covers the
-          essentials: product catalog, cart, checkout, search, authentication,
-          wishlist, and more — all built with accessibility, SEO, and
-          performance in mind.
+          Nuestro objetivo es ofrecer soluciones tecnológicas confiables y potentes para profesionales, creadores de contenido, programadores, empresas y gamers que buscan el máximo rendimiento en sus actividades diarias.
+        </p>
+
+        <div className="my-10 grid gap-6 sm:grid-cols-2">
+          <div className="rounded-lg border p-5 bg-neutral-50/50">
+            <div className="flex items-center gap-3 font-semibold text-foreground mb-2">
+              <Cpu className="h-5 w-5 text-primary" />
+              <span>Hardware de Última Generación</span>
+            </div>
+            <p className="text-sm">
+              Trabajamos con las marcas líderes globales como ASUS, NVIDIA, AMD, Corsair, Lenovo, Kingston y Logitech.
+            </p>
+          </div>
+
+          <div className="rounded-lg border p-5 bg-neutral-50/50">
+            <div className="flex items-center gap-3 font-semibold text-foreground mb-2">
+              <ShieldCheck className="h-5 w-5 text-primary" />
+              <span>Garantía y Confianza</span>
+            </div>
+            <p className="text-sm">
+              Todos nuestros productos y equipos ensamblados cuentan con garantía oficial y soporte técnico directo.
+            </p>
+          </div>
+
+          <div className="rounded-lg border p-5 bg-neutral-50/50">
+            <div className="flex items-center gap-3 font-semibold text-foreground mb-2">
+              <Headphones className="h-5 w-5 text-primary" />
+              <span>Asesoría Personalizada</span>
+            </div>
+            <p className="text-sm">
+              Te orientamos para armar o elegir el equipo que realmente necesitas según tu presupuesto y requerimientos.
+            </p>
+          </div>
+
+          <div className="rounded-lg border p-5 bg-neutral-50/50">
+            <div className="flex items-center gap-3 font-semibold text-foreground mb-2">
+              <Award className="h-5 w-5 text-primary" />
+              <span>Compromiso de Calidad</span>
+            </div>
+            <p className="text-sm">
+              Pruebas rigurosas de estabilidad y compatibilidad en cada computadora antes de ser entregada.
+            </p>
+          </div>
+        </div>
+
+        <h2 className="!mt-12 text-xl font-semibold text-foreground">
+          Nuestra Misión
+        </h2>
+        <p>
+          Democratizar el acceso a equipos de computación y componentes de alta calidad, brindando una experiencia transparente, asesoría honesta y un servicio postventa cercano que te respalde en todo momento.
         </p>
 
         <h2 className="!mt-12 text-xl font-semibold text-foreground">
-          Built by Epic Design Labs
+          ¿Tienes un proyecto o necesitas una cotización?
         </h2>
         <p>
-          This starter was created by{" "}
-          <a
-            href="https://epicdesignlabs.com"
-            target="_blank"
-            rel="noopener"
-            className="underline hover:text-foreground"
-          >
-            Epic Design Labs
-          </a>
-          , a design and development studio that helps businesses build
-          high-performing ecommerce experiences. We work with brands of all
-          sizes to design, develop, and optimize online stores that convert.
-        </p>
-
-        <h2 className="!mt-12 text-xl font-semibold text-foreground">
-          What&apos;s Included
-        </h2>
-        <ul className="list-inside list-disc space-y-2">
-          <li>30+ pages with responsive layouts</li>
-          <li>Product catalog with categories, subcategories, and brands</li>
-          <li>Shopping cart with slide-out drawer</li>
-          <li>Pluggable checkout provider (connect any payment system)</li>
-          <li>Search modal with instant results</li>
-          <li>Wishlist and recently viewed products</li>
-          <li>Authentication with protected routes</li>
-          <li>Full SEO setup (metadata, structured data, sitemap)</li>
-          <li>Accessibility compliant (WCAG best practices)</li>
-          <li>Internationalization ready (next-intl with EN/ES)</li>
-          <li>Theme variables for easy rebranding</li>
-        </ul>
-
-        <h2 className="!mt-12 text-xl font-semibold text-foreground">
-          Need a Developer?
-        </h2>
-        <p>
-          This template is free to use, modify, and deploy. If you need help
-          customizing it, integrating a payment provider, or building something
-          more complex, our team is here to help.{" "}
-          <Link href="/contact" className="underline hover:text-foreground">
-            Get in touch
-          </Link>{" "}
-          or visit{" "}
-          <a
-            href="https://epicdesignlabs.com"
-            target="_blank"
-            rel="noopener"
-            className="underline hover:text-foreground"
-          >
-            epicdesignlabs.com
-          </a>
-          .
+          Si estás buscando armar una PC personalizada, renovar los equipos de tu empresa o adquirir una laptop para tus estudios o trabajo, estamos listos para atenderte.{" "}
+          <Link href="/contact" className="underline font-medium text-foreground hover:text-primary">
+            Ponte en contacto con nuestro equipo
+          </Link>.
         </p>
       </div>
     </div>

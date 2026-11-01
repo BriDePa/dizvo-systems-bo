@@ -160,7 +160,7 @@ export function Header({ categories = [] }: HeaderProps) {
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-1">
           <button
             onClick={() => setSearchOpen(true)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent"
@@ -169,6 +169,10 @@ export function Header({ categories = [] }: HeaderProps) {
             <Search className="h-5 w-5" />
           </button>
 
+          {/* NOTA: Wishlist, Login/Registro/Usuario y Carrito ocultos a petición del usuario.
+              Para reactivarlos en el futuro, descomentar los bloques correspondientes. */}
+
+          {/*
           <Link
             href="/wishlist"
             className="hidden h-10 w-10 items-center justify-center rounded-md hover:bg-accent lg:inline-flex"
@@ -177,7 +181,6 @@ export function Header({ categories = [] }: HeaderProps) {
             <Heart className="h-5 w-5" />
           </Link>
 
-          {/* User menu — desktop only */}
           {mounted && isAuthenticated ? (
             <DropdownMenu>
               <DropdownMenuTrigger
@@ -220,7 +223,6 @@ export function Header({ categories = [] }: HeaderProps) {
             </Link>
           )}
 
-          {/* Cart */}
           <button
             onClick={openCart}
             className="relative inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent"
@@ -238,6 +240,7 @@ export function Header({ categories = [] }: HeaderProps) {
               </span>
             )}
           </button>
+          */}
         </div>
       </div>
     </header>

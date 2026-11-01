@@ -69,6 +69,7 @@ export function ProductCard({ product }: ProductCardProps) {
             Sale
           </Badge>
         )}
+        {/* Wishlist ocultado temporalmente según solicitud
         <button
           onClick={handleWishlist}
           className="absolute top-2 right-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-sm transition-opacity hover:bg-neutral-50 sm:opacity-0 sm:group-hover:opacity-100"
@@ -78,6 +79,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className={`h-4 w-4 ${isWishlisted ? "fill-current text-wishlist" : "text-neutral-600"}`}
           />
         </button>
+        */}
       </div>
       <div className="mt-3">
         <StarRating rating={product.rating} reviewCount={product.reviewCount} size="sm" />

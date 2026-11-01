@@ -8,34 +8,30 @@ export interface NavSection {
   items: NavItem[]
 }
 
-// Single source of truth for all navigation across desktop header,
-// mobile menu, and anywhere else. Edit this one file to update all menus.
-
+// Fuente única de navegación para encabezado, menú móvil y enlaces
 export const shopLinks: NavItem[] = [
-  { name: "Electronics", href: "/electronics" },
-  { name: "Clothing", href: "/clothing" },
-  { name: "Home & Kitchen", href: "/home-kitchen" },
-  { name: "Accessories", href: "/accessories" },
-  { name: "Food & Drink", href: "/food-drink" },
+  { name: "Laptops", href: "/laptops" },
+  { name: "Computadoras", href: "/computadoras" },
+  { name: "Componentes", href: "/componentes" },
+  { name: "Monitores", href: "/monitores" },
+  { name: "Periféricos", href: "/perifericos" },
 ]
 
 export const accountLinks: NavItem[] = [
-  { name: "My Account", href: "/account" },
-  { name: "Wishlist", href: "/wishlist" },
-  { name: "Orders", href: "/account/orders" },
+  { name: "Mi Cuenta", href: "/account" },
+  { name: "Lista de Deseos", href: "/wishlist" },
+  { name: "Mis Pedidos", href: "/account/orders" },
 ]
 
 export const infoLinks: NavItem[] = [
-  { name: "All Brands", href: "/brands" },
-  { name: "Blog", href: "/blog" },
-  { name: "Pages", href: "/pages" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-  { name: "FAQ", href: "/faq" },
+  { name: "Marcas", href: "/brands" },
+  { name: "Nosotros", href: "/about" },
+  { name: "Contacto", href: "/contact" },
+  { name: "Preguntas Frecuentes", href: "/faq" },
 ]
 
 export const mobileMenuSections: NavSection[] = [
-  { label: "Shop", items: shopLinks },
-  { label: "Account", items: accountLinks },
-  { label: "Info", items: infoLinks },
+  { label: "Categorías", items: shopLinks },
+  // { label: "Cuenta", items: accountLinks }, // Ocultado temporalmente
+  { label: "Información", items: infoLinks },
 ]

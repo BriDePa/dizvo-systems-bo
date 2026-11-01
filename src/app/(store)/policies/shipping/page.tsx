@@ -1,48 +1,37 @@
 import type { Metadata } from "next"
+import { siteConfig } from "@/lib/config"
 
 export const metadata: Metadata = {
-  title: "Shipping Policy",
-  description: "Learn about our shipping options, rates, and delivery times.",
+  title: `Política de Envíos | ${siteConfig.name}`,
+  description: `Conoce los tiempos, costos y modalidades de envío de ${siteConfig.name}.`,
 }
 
 export default function ShippingPolicyPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold tracking-tight">Shipping Policy</h1>
-      <div className="mt-8 space-y-6 text-muted-foreground">
+      <h1 className="text-3xl font-bold tracking-tight">Política de Envíos</h1>
+      <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
         <h2 className="text-xl font-semibold text-foreground">
-          Domestic Shipping
+          Tiempos y Métodos de Entrega
         </h2>
         <ul className="list-inside list-disc space-y-2">
-          <li>Standard Shipping (5-7 business days): $5.99</li>
-          <li>Express Shipping (2-3 business days): $12.99</li>
-          <li>Overnight Shipping (1 business day): $24.99</li>
-          <li>Free shipping on all orders over $75</li>
+          <li><strong>Envío Estándar Nacional (3 a 5 días hábiles):</strong> Envíos asegurados a todo el territorio nacional.</li>
+          <li><strong>Envío Express (1 a 2 días hábiles):</strong> Para entregas urgentes en ciudades principales.</li>
+          <li><strong>Envío Gratis:</strong> En compras superiores a ${siteConfig.freeShippingThreshold / 100} USD.</li>
         </ul>
 
         <h2 className="text-xl font-semibold text-foreground">
-          International Shipping
+          Empaque Especial para Hardware
         </h2>
         <p>
-          We ship to most countries worldwide. International shipping rates are
-          calculated at checkout based on destination and package weight.
-          Delivery typically takes 7-14 business days.
+          En <strong>{siteConfig.name}</strong> comprendemos el cuidado que requieren los componentes electrónicos, paneles de monitores y ensambles de computadoras. Cada equipo es embalado con protección antiestática, sellos de seguridad y relleno de alta absorción de impacto.
         </p>
 
         <h2 className="text-xl font-semibold text-foreground">
-          Order Processing
+          Seguimiento del Paquete
         </h2>
         <p>
-          Orders placed before 2:00 PM EST on business days are processed the
-          same day. Orders placed after 2:00 PM EST or on weekends will be
-          processed the next business day.
-        </p>
-
-        <h2 className="text-xl font-semibold text-foreground">Tracking</h2>
-        <p>
-          You will receive a shipping confirmation email with a tracking number
-          once your order has shipped. You can also track your order from your
-          account dashboard.
+          Una vez despachado tu pedido, recibirás un número de guía para rastrear la ubicación exacta de tu paquete a través de la empresa de paquetería correspondiente.
         </p>
       </div>
     </div>

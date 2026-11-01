@@ -1,25 +1,25 @@
 // ============================================================================
-// Store Configuration — Single source of truth for all store-wide settings.
-// Edit this file to customize the store name, contact info, social links, etc.
+// Configuración de la Tienda — Fuente única de verdad para configuración global.
+// Dizvo Systems
 // ============================================================================
 
 export const siteConfig = {
-  // Branding
-  name: "Next.js Ecommerce Starter",
-  tagline: "A free, open-source Next.js ecommerce template.",
+  // Marca
+  name: "Dizvo Systems",
+  tagline: "Laptops, Computadoras y Componentes de Hardware",
   description:
-    "A free, production-ready Next.js ecommerce starter template built with Tailwind CSS and shadcn/ui. Responsive, accessible, SEO optimized, and ready to connect to any checkout system. Built by Epic Design Labs.",
+    "Dizvo Systems — Tu empresa de confianza para laptops, computadoras de alto rendimiento, componentes de hardware y soluciones tecnológicas.",
 
-  // Announcement bar (set to "" to hide)
-  announcement: "Free shipping on all orders over $75 — Shop now!",
+  // Barra de anuncios superior (dejar en "" para ocultar)
+  announcement: "¡Bienvenidos a Dizvo Systems! Calidad, garantía y rendimiento en cada equipo.",
 
   // URLs
   url: process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000",
 
-  // Contact
+  // Contacto
   contact: {
-    email: "support@epicdesignlabs.com",
-    phone: "",
+    email: "contacto@dizvosystems.com",
+    phone: "+1 234 567 890",
     address: {
       street: "",
       suite: "",
@@ -29,22 +29,22 @@ export const siteConfig = {
     },
   },
 
-  // Social links (set to "" to hide)
+  // Redes sociales (dejar en "" para ocultar)
   social: {
-    twitter: "https://x.com/epicdesignlabs",
-    instagram: "https://instagram.com/epicdesignlabs",
-    facebook: "https://facebook.com/epicdesignlabs",
+    twitter: "",
+    instagram: "",
+    facebook: "",
     youtube: "",
     tiktok: "",
   },
 
-  // Shipping
-  freeShippingThreshold: 7500, // in cents ($75.00)
-  taxRate: 0.08, // 8%
+  // Envíos e impuestos
+  freeShippingThreshold: 10000, // en centavos ($100.00)
+  taxRate: 0.16,
 
-  // Currency & locale
+  // Moneda y localización
   currency: "USD",
-  locale: "en-US",
+  locale: "es-ES",
 
   // Legal
   copyrightYear: new Date().getFullYear(),

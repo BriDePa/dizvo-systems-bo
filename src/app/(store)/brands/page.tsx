@@ -3,10 +3,11 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { PageHeader } from "@/components/ui/page-header"
 import { brandRepository } from "@/lib/repositories"
+import { siteConfig } from "@/lib/config"
 
 export const metadata: Metadata = {
-  title: "All Brands",
-  description: "Browse all brands in our store.",
+  title: `Marcas Oficiales | ${siteConfig.name}`,
+  description: `Explora todas las marcas líderes de tecnología y componentes disponibles en ${siteConfig.name}.`,
 }
 
 export default async function BrandsPage() {
@@ -15,8 +16,8 @@ export default async function BrandsPage() {
   return (
     <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 lg:px-8">
       <PageHeader
-        title="All Brands"
-        description={`${brands.length} brands`}
+        title="Marcas Oficiales"
+        description={`${brands.length} marcas líderes con garantía y soporte directo`}
       />
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
