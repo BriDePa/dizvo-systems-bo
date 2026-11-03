@@ -217,7 +217,7 @@ export function ProductDetailView({
                         selectedVariant.compareAtPrice!) *
                       100
                   )}
-                  % off
+                  % de descuento
                 </Badge>
               </>
             )}

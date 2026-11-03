@@ -94,7 +94,7 @@
           "name": "16GB RAM / 1TB SSD",
           "price": 139900,
           "compareAtPrice": 154900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 12,
             "trackInventory": true,
@@ -120,7 +120,7 @@
           "name": "32GB RAM / 2TB SSD",
           "price": 164900,
           "compareAtPrice": 179900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 8,
             "trackInventory": true,
@@ -178,7 +178,7 @@
           "name": "RTX 4070 / 32GB RAM",
           "price": 169900,
           "compareAtPrice": 189900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 9,
             "trackInventory": true,
@@ -236,7 +236,7 @@
           "name": "Intel Core Ultra 7 / 1TB SSD",
           "price": 104900,
           "compareAtPrice": 119900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 15,
             "trackInventory": true,
@@ -294,7 +294,7 @@
           "name": "Configuración Base 32GB RAM",
           "price": 219900,
           "compareAtPrice": 239900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 6,
             "trackInventory": true,
@@ -352,7 +352,7 @@
           "name": "Intel i7 / 32GB RAM / 1TB SSD",
           "price": 89900,
           "compareAtPrice": 99900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 14,
             "trackInventory": true,
@@ -410,7 +410,7 @@
           "name": "Edición Dual Fan 12GB",
           "price": 59900,
           "compareAtPrice": 64900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 18,
             "trackInventory": true,
@@ -468,7 +468,7 @@
           "name": "Box (Socket AM5)",
           "price": 43900,
           "compareAtPrice": 48900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 25,
             "trackInventory": true,
@@ -526,7 +526,7 @@
           "name": "Negro - CL30 6000MHz",
           "price": 11900,
           "compareAtPrice": 13900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 30,
             "trackInventory": true,
@@ -584,7 +584,7 @@
           "name": "Capacidad 2TB",
           "price": 15400,
           "compareAtPrice": 17900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 20,
             "trackInventory": true,
@@ -642,7 +642,7 @@
           "name": "27 Pulgadas QHD 180Hz",
           "price": 27900,
           "compareAtPrice": 32900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 10,
             "trackInventory": true,
@@ -700,7 +700,7 @@
           "name": "Switches GX Brown Tactile",
           "price": 17900,
           "compareAtPrice": 19900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 15,
             "trackInventory": true,
@@ -758,7 +758,7 @@
           "name": "Negro",
           "price": 12900,
           "compareAtPrice": 14900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 22,
             "trackInventory": true,
@@ -784,7 +784,7 @@
           "name": "Blanco",
           "price": 12900,
           "compareAtPrice": 14900,
-          "currency": "USD",
+          "currency": "Bs.",
           "inventory": {
             "quantity": 14,
             "trackInventory": true,

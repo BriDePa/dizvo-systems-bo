@@ -4,10 +4,11 @@ import { Search } from "lucide-react"
 import { productRepository } from "@/lib/repositories"
 import { ProductGrid } from "@/components/products/product-grid"
 import { Pagination } from "@/components/products/pagination"
+import { siteConfig } from "@/lib/config"
 
 export const metadata: Metadata = {
-  title: "Search",
-  description: "Search our product catalog.",
+  title: `Búsqueda | ${siteConfig.name}`,
+  description: `Busca productos y hardware en el catálogo de ${siteConfig.name}.`,
 }
 
 interface SearchPageProps {
@@ -26,13 +27,13 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
   return (
     <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold tracking-tight">Search</h1>
+      <h1 className="text-3xl font-bold tracking-tight">Búsqueda de Productos</h1>
 
       <form className="relative mt-8 max-w-lg" action="/search" method="get">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <Input
           name="q"
-          placeholder="Search for products..."
+          placeholder="Buscar laptops, componentes, monitores..."
           defaultValue={query}
           className="pl-10 text-base"
         />
@@ -42,7 +43,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         <div className="mt-8">
           <p className="text-sm text-muted-foreground">
             {results.pagination.total}{" "}
-            {results.pagination.total === 1 ? "result" : "results"} for &quot;
+            {results.pagination.total === 1 ? "producto encontrado" : "productos encontrados"} para &quot;
             {query}&quot;
           </p>
           <div className="mt-6">
@@ -61,16 +62,15 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       {!hasQuery && (
         <div className="mt-16 text-center">
           <p className="text-sm text-muted-foreground">
-            Try searching for a product name, category, or keyword.
+            Ingresa el nombre de un equipo, componente, categoría o marca para buscar.
           </p>
         </div>
       )}
 
       {hasQuery && results && results.items.length === 0 && (
         <div className="mt-16 text-center">
-          <p className="text-muted-foreground">
-            No products found for &quot;{query}&quot;. Try a different search
-            term.
+          <p className="text-sm text-muted-foreground">
+            No se encontraron productos que coincidan con &quot;{query}&quot;. Intenta con términos más generales.
           </p>
         </div>
       )}

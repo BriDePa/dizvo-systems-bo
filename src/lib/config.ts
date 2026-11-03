@@ -19,7 +19,8 @@ export const siteConfig = {
   // Contacto
   contact: {
     email: "contacto@dizvosystems.com",
-    phone: "+1 234 567 890",
+    phone: "+591 70000000", // Puedes cambiarlo por tu número de teléfono / WhatsApp
+    whatsapp: "+59170000000", // Enlace directo a WhatsApp
     address: {
       street: "",
       suite: "",
@@ -39,12 +40,12 @@ export const siteConfig = {
   },
 
   // Envíos e impuestos
-  freeShippingThreshold: 10000, // en centavos ($100.00)
-  taxRate: 0.16,
+  freeShippingThreshold: 50000, // en centavos (Bs. 500,00)
+  taxRate: 0.13,
 
   // Moneda y localización
-  currency: "USD",
-  locale: "es-ES",
+  currency: "Bs.",
+  locale: "es-BO",
 
   // Legal
   copyrightYear: new Date().getFullYear(),

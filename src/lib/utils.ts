@@ -10,14 +10,40 @@ export function formatPrice(
   priceInCents: number,
   currency?: string
 ): string {
-  return new Intl.NumberFormat(siteConfig.locale, {
-    style: "currency",
-    currency: currency ?? siteConfig.currency,
-  }).format(priceInCents / 100)
+  const curr = currency ?? siteConfig.currency
+
+  if (
+    curr === "Bs" ||
+    curr === "Bs." ||
+    curr === "BS" ||
+    curr === "BOB" ||
+    curr === "VES" ||
+    siteConfig.currency === "Bs." ||
+    siteConfig.currency === "Bs"
+  ) {
+    const formatted = (priceInCents / 100).toLocaleString("es-ES", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
+    return `Bs. ${formatted}`
+  }
+
+  try {
+    return new Intl.NumberFormat(siteConfig.locale, {
+      style: "currency",
+      currency: curr,
+    }).format(priceInCents / 100)
+  } catch {
+    const formatted = (priceInCents / 100).toLocaleString("es-ES", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
+    return `Bs. ${formatted}`
+  }
 }
 
 export function formatDate(date: string | Date): string {
-  return new Intl.DateTimeFormat("en-US", {
+  return new Intl.DateTimeFormat("es-ES", {
     month: "short",
     day: "numeric",
     year: "numeric",
