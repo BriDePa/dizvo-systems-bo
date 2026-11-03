@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ShieldCheck, Zap, Headphones } from "lucide-react"
+import { ArrowRight, ShieldCheck, Zap, Headphones, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { siteConfig } from "@/lib/config"
@@ -25,48 +25,77 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const categories = await categoryRepository.list()
-  const featuredProducts = await productRepository.getFeatured(4)
+  const featuredProducts = await productRepository.getFeatured(5)
 
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative flex h-[600px] items-center justify-center bg-gradient-to-b from-neutral-100 to-white">
+      <section className="relative flex min-h-[580px] items-center justify-center bg-gradient-to-b from-neutral-100 to-white py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <Badge variant="secondary" className="mb-4">
-            Envío gratis en compras sobre {formatPrice(siteConfig.freeShippingThreshold)}
+            🚀 Envíos a todo el país y entregas personales en puntos acordados
           </Badge>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-foreground">
-            Laptops, Computadoras y Componentes
+            Laptops Gaming y Tecnología en Bolivia
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground">
-            Descubre los mejores equipos para gaming, oficina y diseño. 
-            Hardware de última generación, procesadores, tarjetas gráficas y accesorios con garantía.
+          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            Especialistas en laptops de alto rendimiento (HP Victus, Acer Nitro), computadoras y componentes. 
+            Precios directos en <strong>Bs.</strong> con atención y pedidos inmediatos por WhatsApp.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Button size="lg" asChild>
               <Link href="/shop">
-                Ver Catálogo Completo
+                Ver Catálogo de Laptops
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/contact">
-                Contáctanos
-              </Link>
+            <Button size="lg" className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold" asChild>
+              <a
+                href={`https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(
+                  "Hola Dizvo Systems! Quisiera consultar sobre su catálogo de laptops y disponibilidad."
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consultar al WhatsApp
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Categorías */}
+      {/* Laptops y Productos Destacados */}
       <section className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+              Laptops y Equipos Destacados
+            </h2>
+            <p className="text-sm text-muted-foreground mt-1">
+              Modelos listos para entrega con procesadores Intel y tarjetas gráficas GeForce RTX
+            </p>
+          </div>
+          <Link
+            href="/shop"
+            className="text-sm font-semibold text-primary hover:underline"
+          >
+            Ver catálogo completo &rarr;
+          </Link>
+        </div>
+        <div className="mt-8">
+          <ProductGrid products={featuredProducts} />
+        </div>
+      </section>
+
+      {/* Categorías */}
+      <section className="mx-auto w-full max-w-[1440px] px-4 py-12 sm:px-6 lg:px-8 border-t">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">
               Explorar por Categoría
             </h2>
             <p className="text-sm text-muted-foreground mt-1">
-              Encuentra rápidamente lo que necesitas para tu equipo
+              Encuentra laptops, monitores, partes y accesorios para tu setup
             </p>
           </div>
           <Link
@@ -98,58 +127,35 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Productos Destacados */}
-      <section className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          <div>
-            <h2 className="text-2xl font-bold tracking-tight">
-              Productos Destacados
-            </h2>
-            <p className="text-sm text-muted-foreground mt-1">
-              Lo más popular y recomendado en hardware y portátiles
-            </p>
-          </div>
-          <Link
-            href="/shop"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground"
-          >
-            Ver todos &rarr;
-          </Link>
-        </div>
-        <div className="mt-8">
-          <ProductGrid products={featuredProducts} />
-        </div>
-      </section>
-
-      {/* Beneficios */}
+      {/* Beneficios y Modalidad de Trabajo */}
       <section className="border-t bg-neutral-50 py-16">
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 text-center">
             <div className="flex flex-col items-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
-                <ShieldCheck className="h-6 w-6" />
+                <MapPin className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold">Garantía Asegurada</h3>
+              <h3 className="text-lg font-semibold">Entregas en Puntos Acordados</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Todos nuestros componentes y computadoras cuentan con garantía directa y soporte técnico.
+                No tenemos tienda física: coordinamos entregas personales y seguras en puntos acordados para tu comodidad.
               </p>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
                 <Zap className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold">Envíos Rápidos</h3>
+              <h3 className="text-lg font-semibold">Envíos a Todo el País</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Despachamos tu pedido con empaque seguro y seguimiento en tiempo real.
+                Despachamos tu equipo con embalaje protegido de alto impacto y número de guía para seguimiento.
               </p>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
-                <Headphones className="h-6 w-6" />
+                <ShieldCheck className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold">Asesoría Personalizada</h3>
+              <h3 className="text-lg font-semibold">Equipos Nuevos y Garantizados</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                ¿Tienes dudas sobre compatibilidad? Nuestro equipo te asesora antes de comprar.
+                Laptops y hardware 100% originales con garantía oficial directa y soporte post-venta.
               </p>
             </div>
           </div>
@@ -163,7 +169,7 @@ export default async function HomePage() {
             Suscríbete a nuestras novedades
           </h2>
           <p className="mt-4 text-neutral-400">
-            Recibe avisos sobre nuevas llegadas, ofertas especiales y lanzamientos de hardware.
+            Recibe avisos sobre nuevas llegadas de laptops, ofertas especiales y componentes.
           </p>
           <NewsletterForm />
         </div>

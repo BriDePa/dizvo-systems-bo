@@ -4,9 +4,9 @@
       "id": "cat-laptops",
       "name": "Laptops",
       "slug": "laptops",
-      "description": "Laptops para gaming, diseño, oficina y ultrabooks de alto rendimiento.",
+      "description": "Laptops para gaming, diseño, oficina y multitarea de alto rendimiento.",
       "image": {
-        "url": "/images/products/placeholder.svg",
+        "url": "/images/products/hp-victus-15-fa0033dx-1.jpg",
         "alt": "Laptops"
       },
       "order": 1
@@ -58,211 +58,361 @@
   ],
   "products": [
     {
-      "id": "prod-1",
-      "name": "Laptop Gaming ASUS ROG Strix G16",
-      "slug": "laptop-gaming-asus-rog-strix-g16",
-      "description": "Pantalla 16'' 165Hz FHD+, Intel Core i7-13650HX, 16GB RAM DDR5, 1TB SSD NVMe, NVIDIA RTX 4060 8GB.",
-      "body": "<p>La <strong>ASUS ROG Strix G16</strong> está diseñada para ofrecer el máximo poder tanto en videojuegos competitivos como en edición de video y render 3D. Equipada con el procesador Intel Core i7 de 13va generación y gráficos GeForce RTX 4060 con tecnología DLSS 3.</p><ul><li>Procesador: Intel Core i7-13650HX (14 núcleos, hasta 4.9 GHz)</li><li>Gráficos: NVIDIA GeForce RTX 4060 8GB GDDR6 (140W TGP)</li><li>Memoria: 16GB DDR5 4800MHz (expandible hasta 64GB)</li><li>Almacenamiento: 1TB PCIe 4.0 NVMe M.2 SSD</li><li>Pantalla: 16 pulgadas 16:10 FHD+ (1920x1200) 165Hz IPS</li><li>Teclado: Retroiluminado RGB por 4 zonas</li></ul>",
+      "id": "laptop-hp-victus-15-fa0033dx",
+      "name": "HP Victus 15-FA0033DX (i5-12450H + RTX 3050)",
+      "slug": "hp-victus-15-fa0033dx",
+      "description": "Gaming y multitarea sin límites. Intel Core i5-12450H, NVIDIA RTX 3050 4GB GDDR6, 8GB RAM DDR4 (ampliable a 64GB), 512GB SSD NVMe, Pantalla 15.6'' 144Hz IPS antirreflejo.",
+      "body": "<h3>Especificaciones Técnicas Detalladas</h3><ul><li><strong>Modelo:</strong> 15-FA0033DX</li><li><strong>Procesador:</strong> Intel Core i5-12450H (8 núcleos, 12 hilos, hasta 4.4 GHz)</li><li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 3050 4GB GDDR6</li><li><strong>Memoria RAM:</strong> 8GB DDR4-3200MHz (ampliable hasta 64GB)</li><li><strong>Almacenamiento:</strong> 512GB SSD NVMe PCIe</li><li><strong>Pantalla:</strong> 15.6\" FHD (1920x1080) IPS, 144Hz, antirreflejo, 250 nits</li><li><strong>Batería:</strong> 4 celdas, 70Wh</li><li><strong>Peso y Dimensiones:</strong> 2.29 kg | 357.9 x 255 x 23.5 mm</li><li><strong>Puertos:</strong> 2x USB-A 3.1, 1x USB-C 3.1 (DisplayPort), HDMI 2.1, Ethernet RJ-45, Jack 3.5mm</li><li><strong>Teclado:</strong> Retroiluminado de tamaño completo</li><li><strong>Sistema y Audio:</strong> Windows 11 Home, Sonido B&O de alta fidelidad</li></ul><p><em>Entrega inmediata en puntos acordados y envíos asegurados a todo el país.</em></p>",
       "images": [
         {
-          "url": "/images/products/placeholder.svg",
-          "alt": "Laptop Gaming ASUS ROG Strix G16"
-        }
-      ],
-      "status": "active",
-      "brandId": "brand-asus",
-      "categoryIds": [
-        "cat-laptops"
-      ],
-      "tags": [
-        "laptop",
-        "gaming",
-        "asus",
-        "rtx4060",
-        "intel"
-      ],
-      "rating": 4.8,
-      "reviewCount": 34,
-      "featured": true,
-      "createdAt": "2026-01-15T00:00:00.000Z",
-      "updatedAt": "2026-02-01T00:00:00.000Z",
-      "variants": [
-        {
-          "id": "var-1-1",
-          "productId": "prod-1",
-          "sku": "ASUS-ROG-G16-16GB-1TB",
-          "name": "16GB RAM / 1TB SSD",
-          "price": 139900,
-          "compareAtPrice": 154900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 12,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Configuración",
-              "value": "16GB RAM + 1TB SSD"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "ASUS ROG Strix G16 16GB"
-            }
-          ]
+          "url": "/images/products/hp-victus-15-fa0033dx-1.jpg",
+          "alt": "HP Victus 15-FA0033DX ángulo"
         },
         {
-          "id": "var-1-2",
-          "productId": "prod-1",
-          "sku": "ASUS-ROG-G16-32GB-2TB",
-          "name": "32GB RAM / 2TB SSD",
-          "price": 164900,
-          "compareAtPrice": 179900,
+          "url": "/images/products/hp-victus-15-fa0033dx-2.jpg",
+          "alt": "HP Victus 15-FA0033DX pantalla y teclado"
+        },
+        {
+          "url": "/images/products/hp-victus-15-fa0033dx-3.jpg",
+          "alt": "HP Victus 15-FA0033DX frontal"
+        },
+        {
+          "url": "/images/products/hp-victus-15-fa0033dx-ficha.jpg",
+          "alt": "HP Victus 15-FA0033DX Ficha Técnica"
+        }
+      ],
+      "status": "active",
+      "brandId": "brand-hp",
+      "categoryIds": [
+        "cat-laptops"
+      ],
+      "tags": [
+        "hp",
+        "victus",
+        "laptop",
+        "gaming",
+        "rtx 3050",
+        "intel i5"
+      ],
+      "rating": 4.8,
+      "reviewCount": 18,
+      "featured": true,
+      "createdAt": "2026-02-01T00:00:00.000Z",
+      "updatedAt": "2026-02-20T00:00:00.000Z",
+      "variants": [
+        {
+          "id": "var-hp-fa0033dx",
+          "productId": "laptop-hp-victus-15-fa0033dx",
+          "sku": "HP-VIC-15-FA0033DX",
+          "name": "8GB RAM / 512GB SSD / RTX 3050",
+          "price": 816000,
           "currency": "Bs.",
           "inventory": {
-            "quantity": 8,
+            "quantity": 5,
             "trackInventory": true,
             "allowBackorder": false
           },
           "options": [
             {
               "name": "Configuración",
-              "value": "32GB RAM + 2TB SSD"
+              "value": "i5-12450H + RTX 3050"
             }
           ],
           "images": [
             {
-              "url": "/images/products/placeholder.svg",
-              "alt": "ASUS ROG Strix G16 32GB"
+              "url": "/images/products/hp-victus-15-fa0033dx-1.jpg",
+              "alt": "HP Victus 15-FA0033DX"
             }
           ]
         }
       ]
     },
     {
-      "id": "prod-2",
-      "name": "Laptop Lenovo Legion Pro 5 Gen 9",
-      "slug": "laptop-lenovo-legion-pro-5",
-      "description": "Pantalla 16'' 240Hz WQXGA, AMD Ryzen 7 7745HX, 32GB DDR5, 1TB SSD, NVIDIA RTX 4070 8GB.",
-      "body": "<p>Diseñada con inteligencia artificial impulsada por el chip Lenovo LA AI. La <strong>Legion Pro 5</strong> combina el brutal rendimiento multinúcleo de AMD Ryzen con una pantalla WQXGA de 240Hz con calibración de color profesional.</p>",
+      "id": "laptop-hp-victus-15-fa1030nr",
+      "name": "HP Victus 15-FA1030NR (i5-12450H + RTX 2050)",
+      "slug": "hp-victus-15-fa1030nr",
+      "description": "La opción gamer más accesible. Intel Core i5-12450H, NVIDIA RTX 2050 4GB GDDR6, 8GB RAM DDR4 (ampliable a 32GB), 512GB SSD NVMe, Pantalla 15.6'' 144Hz IPS LED antirreflejo, Acabado Silver.",
+      "body": "<h3>Especificaciones Técnicas Detalladas</h3><ul><li><strong>Modelo:</strong> 15-FA1030NR</li><li><strong>Procesador:</strong> Intel Core i5-12450H (8 núcleos, 12 hilos, hasta 4.4 GHz)</li><li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 2050 4GB GDDR6</li><li><strong>Memoria RAM:</strong> 8GB DDR4-3200MHz (ampliable hasta 32GB)</li><li><strong>Almacenamiento:</strong> 512GB SSD NVMe PCIe</li><li><strong>Pantalla:</strong> 15.6\" FHD IPS LED (144 Hz, 250 nits), antirreflejo</li><li><strong>Batería:</strong> 3 celdas, 52.5Wh</li><li><strong>Peso y Dimensiones:</strong> 2.29 kg | 357.9 x 255 x 23.5 mm</li><li><strong>Puertos:</strong> 2x USB-A 3.1, 1x USB-C 3.1 (DisplayPort), HDMI 2.1, Ethernet RJ-45, Jack 3.5mm</li><li><strong>Teclado:</strong> Retroiluminado completo</li><li><strong>Sistema y Acabado:</strong> Windows 11 Home, Plateado (Silver), Sonido B&O</li></ul><p><em>Entrega inmediata en puntos acordados y envíos asegurados a todo el país.</em></p>",
       "images": [
         {
-          "url": "/images/products/placeholder.svg",
-          "alt": "Lenovo Legion Pro 5"
+          "url": "/images/products/hp-victus-15-fa1030nr-1.jpg",
+          "alt": "HP Victus 15-FA1030NR frontal"
+        },
+        {
+          "url": "/images/products/hp-victus-15-fa1030nr-2.jpg",
+          "alt": "HP Victus 15-FA1030NR pantalla"
+        },
+        {
+          "url": "/images/products/hp-victus-15-fa1030nr-3.jpg",
+          "alt": "HP Victus 15-FA1030NR perfil"
+        },
+        {
+          "url": "/images/products/hp-victus-15-fa1030nr-ficha.jpg",
+          "alt": "HP Victus 15-FA1030NR Ficha Técnica"
         }
       ],
       "status": "active",
-      "brandId": "brand-lenovo",
+      "brandId": "brand-hp",
       "categoryIds": [
         "cat-laptops"
       ],
       "tags": [
+        "hp",
+        "victus",
         "laptop",
-        "gaming",
-        "lenovo",
-        "ryzen",
-        "rtx4070"
-      ],
-      "rating": 4.9,
-      "reviewCount": 41,
-      "featured": true,
-      "createdAt": "2026-01-20T00:00:00.000Z",
-      "updatedAt": "2026-02-10T00:00:00.000Z",
-      "variants": [
-        {
-          "id": "var-2-1",
-          "productId": "prod-2",
-          "sku": "LEN-LEGION-PRO5-4070",
-          "name": "RTX 4070 / 32GB RAM",
-          "price": 169900,
-          "compareAtPrice": 189900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 9,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Gráfica",
-              "value": "RTX 4070"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "Lenovo Legion Pro 5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "prod-3",
-      "name": "Ultrabook ASUS Zenbook 14 OLED",
-      "slug": "ultrabook-asus-zenbook-14-oled",
-      "description": "Ultra portátil de 1.2 kg con pantalla 3K OLED 120Hz, Intel Core Ultra 7 155H, 16GB LPDDR5X, 1TB SSD.",
-      "body": "<p>La combinación perfecta entre portabilidad y elegancia. Chasis totalmente de aluminio, batería de hasta 15 horas de duración y pantalla táctil ASUS Lumina OLED con negros puros y cobertura 100% DCI-P3.</p>",
-      "images": [
-        {
-          "url": "/images/products/placeholder.svg",
-          "alt": "ASUS Zenbook 14 OLED"
-        }
-      ],
-      "status": "active",
-      "brandId": "brand-asus",
-      "categoryIds": [
-        "cat-laptops"
-      ],
-      "tags": [
-        "laptop",
-        "ultrabook",
-        "oled",
-        "asus",
-        "portatil"
+        "gamer accesible",
+        "rtx 2050",
+        "intel i5"
       ],
       "rating": 4.7,
-      "reviewCount": 28,
-      "featured": false,
-      "createdAt": "2026-02-05T00:00:00.000Z",
-      "updatedAt": "2026-02-15T00:00:00.000Z",
+      "reviewCount": 22,
+      "featured": true,
+      "createdAt": "2026-02-02T00:00:00.000Z",
+      "updatedAt": "2026-02-21T00:00:00.000Z",
       "variants": [
         {
-          "id": "var-3-1",
-          "productId": "prod-3",
-          "sku": "ZENBOOK-14-OLED-U7",
-          "name": "Intel Core Ultra 7 / 1TB SSD",
-          "price": 104900,
-          "compareAtPrice": 119900,
+          "id": "var-hp-fa1030nr",
+          "productId": "laptop-hp-victus-15-fa1030nr",
+          "sku": "HP-VIC-15-FA1030NR",
+          "name": "8GB RAM / 512GB SSD / RTX 2050",
+          "price": 756000,
           "currency": "Bs.",
           "inventory": {
-            "quantity": 15,
+            "quantity": 6,
             "trackInventory": true,
             "allowBackorder": false
           },
           "options": [
             {
-              "name": "Modelo",
-              "value": "Azul Ponder"
+              "name": "Configuración",
+              "value": "i5-12450H + RTX 2050"
             }
           ],
           "images": [
             {
-              "url": "/images/products/placeholder.svg",
-              "alt": "ASUS Zenbook 14 OLED"
+              "url": "/images/products/hp-victus-15-fa1030nr-1.jpg",
+              "alt": "HP Victus 15-FA1030NR"
             }
           ]
         }
       ]
     },
     {
-      "id": "prod-4",
+      "id": "laptop-acer-nitro-5-an515-58",
+      "name": "Acer Nitro 5 AN515-58-75NM (i7-12650H + RTX 4050)",
+      "slug": "acer-nitro-5-an515-58-75nm",
+      "description": "Potencia de nivel superior. Intel Core i7-12650H, NVIDIA RTX 4050 6GB GDDR6, 16GB DDR5 (ampliable a 32GB), 1TB SSD NVMe, Pantalla 15.6'' 144Hz IPS SlimBezel, Teclado retroiluminado.",
+      "body": "<h3>Especificaciones Técnicas Detalladas</h3><ul><li><strong>Modelo:</strong> AN515-58-75NM</li><li><strong>Procesador:</strong> Intel Core i7-12650H (10 núcleos, 16 hilos)</li><li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 4050 6GB GDDR6</li><li><strong>Memoria RAM:</strong> 16GB DDR5 (2 slots, ampliable hasta 32GB)</li><li><strong>Almacenamiento:</strong> 1TB (1024GB) SSD PCIe NVMe</li><li><strong>Pantalla:</strong> 15.6\" FHD (1920x1080) IPS, 144Hz, borde delgado (SlimBezel)</li><li><strong>Batería:</strong> 4 celdas, 57Wh</li><li><strong>Peso y Dimensiones:</strong> 2.5 kg | 360.4 x 271 x 25.9 mm</li><li><strong>Puertos:</strong> USB-A 3.2, USB-C, HDMI, Ethernet, Jack 3.5mm, ranura Kensington</li><li><strong>Teclado:</strong> Retroiluminado con teclado numérico</li><li><strong>Sistema y Acabado:</strong> Windows 11 Home, Obsidian Black</li></ul><p><em>Entrega inmediata en puntos acordados y envíos asegurados a todo el país.</em></p>",
+      "images": [
+        {
+          "url": "/images/products/acer-nitro-5-an515-58-1.jpg",
+          "alt": "Acer Nitro 5 AN515-58 frontal"
+        },
+        {
+          "url": "/images/products/acer-nitro-5-an515-58-2.jpg",
+          "alt": "Acer Nitro 5 AN515-58 tapa"
+        },
+        {
+          "url": "/images/products/acer-nitro-5-an515-58-3.jpg",
+          "alt": "Acer Nitro 5 AN515-58 perfil"
+        },
+        {
+          "url": "/images/products/acer-nitro-5-an515-58-ficha.jpg",
+          "alt": "Acer Nitro 5 AN515-58 Ficha Técnica"
+        }
+      ],
+      "status": "active",
+      "brandId": "brand-acer",
+      "categoryIds": [
+        "cat-laptops"
+      ],
+      "tags": [
+        "acer",
+        "nitro 5",
+        "laptop",
+        "gaming",
+        "rtx 4050",
+        "intel i7"
+      ],
+      "rating": 4.9,
+      "reviewCount": 31,
+      "featured": true,
+      "createdAt": "2026-02-03T00:00:00.000Z",
+      "updatedAt": "2026-02-22T00:00:00.000Z",
+      "variants": [
+        {
+          "id": "var-acer-nitro5",
+          "productId": "laptop-acer-nitro-5-an515-58",
+          "sku": "ACER-NITRO5-AN515-58-75NM",
+          "name": "16GB RAM / 1TB SSD / RTX 4050",
+          "price": 1080000,
+          "currency": "Bs.",
+          "inventory": {
+            "quantity": 4,
+            "trackInventory": true,
+            "allowBackorder": false
+          },
+          "options": [
+            {
+              "name": "Configuración",
+              "value": "i7-12650H + RTX 4050"
+            }
+          ],
+          "images": [
+            {
+              "url": "/images/products/acer-nitro-5-an515-58-1.jpg",
+              "alt": "Acer Nitro 5 AN515-58"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laptop-acer-nitro-v15-anv15-51h9",
+      "name": "Acer Nitro V15 ANV15-51-51H9 (i5-13420H + RTX 4050)",
+      "slug": "acer-nitro-v15-anv15-51-51h9",
+      "description": "Potencia de nivel superior. Intel Core i5-13420H, NVIDIA RTX 4050 6GB GDDR6, 8GB DDR5 (ampliable a 32GB), 512GB SSD NVMe, Pantalla 15.6'' 144Hz IPS antirreflejo, Thunderbolt 4.",
+      "body": "<h3>Especificaciones Técnicas Detalladas</h3><ul><li><strong>Modelo:</strong> ANV15-51-51H9</li><li><strong>Procesador:</strong> Intel Core i5-13420H (8 núcleos, 12 hilos, 13va gen)</li><li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 4050 6GB GDDR6</li><li><strong>Memoria RAM:</strong> 8GB DDR5 (ampliable hasta 32GB)</li><li><strong>Almacenamiento:</strong> 512GB SSD NVMe PCIe</li><li><strong>Pantalla:</strong> 15.6\" FHD (1920x1080) IPS, 144Hz, antirreflejo, 250 nits</li><li><strong>Batería:</strong> 4 celdas, 57Wh</li><li><strong>Peso y Dimensiones:</strong> 2.1 kg | 362.3 x 239.9 x 23.5-26.9 mm</li><li><strong>Puertos:</strong> 3x USB-A 3.2, 1x USB-C 3.2 Thunderbolt 4 (DisplayPort, Power Delivery), HDMI 2.1, Ethernet, Jack 3.5mm</li><li><strong>Teclado:</strong> Retroiluminado</li><li><strong>Sistema y Acabado:</strong> Windows 11 Home, Obsidian Black</li></ul><p><em>Entrega inmediata en puntos acordados y envíos asegurados a todo el país.</em></p>",
+      "images": [
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-51h9-1.jpg",
+          "alt": "Acer Nitro V15 51H9 ángulo"
+        },
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-51h9-2.jpg",
+          "alt": "Acer Nitro V15 51H9 pantalla"
+        },
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-51h9-3.jpg",
+          "alt": "Acer Nitro V15 51H9 teclado"
+        },
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-51h9-ficha.jpg",
+          "alt": "Acer Nitro V15 51H9 Ficha Técnica"
+        }
+      ],
+      "status": "active",
+      "brandId": "brand-acer",
+      "categoryIds": [
+        "cat-laptops"
+      ],
+      "tags": [
+        "acer",
+        "nitro v15",
+        "laptop",
+        "gaming",
+        "rtx 4050",
+        "intel i5 13va"
+      ],
+      "rating": 4.8,
+      "reviewCount": 25,
+      "featured": true,
+      "createdAt": "2026-02-04T00:00:00.000Z",
+      "updatedAt": "2026-02-23T00:00:00.000Z",
+      "variants": [
+        {
+          "id": "var-acer-nitrov15-51h9",
+          "productId": "laptop-acer-nitro-v15-anv15-51h9",
+          "sku": "ACER-NITRO-V15-ANV15-51-51H9",
+          "name": "8GB RAM / 512GB SSD / RTX 4050",
+          "price": 948000,
+          "currency": "Bs.",
+          "inventory": {
+            "quantity": 7,
+            "trackInventory": true,
+            "allowBackorder": false
+          },
+          "options": [
+            {
+              "name": "Configuración",
+              "value": "i5-13420H + RTX 4050"
+            }
+          ],
+          "images": [
+            {
+              "url": "/images/products/acer-nitro-v15-anv15-51h9-1.jpg",
+              "alt": "Acer Nitro V15 ANV15-51-51H9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laptop-acer-nitro-v15-anv15-789j",
+      "name": "Acer Nitro V15 ANV15-51-789J (i7-13620H + RTX 4060)",
+      "slug": "acer-nitro-v15-anv15-51-789j",
+      "description": "Máximo rendimiento en la línea Nitro V. Intel Core i7-13620H, NVIDIA RTX 4060 8GB GDDR6, 16GB DDR5 (ampliable a 32GB), 512GB SSD NVMe, Pantalla 15.6'' 144Hz IPS antirreflejo, Thunderbolt 4.",
+      "body": "<h3>Especificaciones Técnicas Detalladas</h3><ul><li><strong>Modelo:</strong> ANV15-51-789J</li><li><strong>Procesador:</strong> Intel Core i7-13620H (10 núcleos, 16 hilos, 13va gen)</li><li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 4060 8GB GDDR6</li><li><strong>Memoria RAM:</strong> 16GB DDR5 (ampliable hasta 32GB)</li><li><strong>Almacenamiento:</strong> 512GB SSD NVMe PCIe</li><li><strong>Pantalla:</strong> 15.6\" FHD (1920x1080) IPS, 144Hz, antirreflejo, 250 nits</li><li><strong>Batería:</strong> 4 celdas, 57Wh</li><li><strong>Peso y Dimensiones:</strong> 2.1 kg | 362.3 x 239.9 x 23.5-26.9 mm</li><li><strong>Puertos:</strong> 3x USB-A 3.2, 1x USB-C 3.2 Thunderbolt 4 (DisplayPort, Power Delivery), HDMI 2.1, Ethernet, Jack 3.5mm</li><li><strong>Teclado:</strong> Retroiluminado</li><li><strong>Sistema y Acabado:</strong> Windows 11 Home, Obsidian Black</li></ul><p><em>Entrega inmediata en puntos acordados y envíos asegurados a todo el país.</em></p>",
+      "images": [
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-789j-1.jpg",
+          "alt": "Acer Nitro V15 789J ángulo"
+        },
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-789j-2.jpg",
+          "alt": "Acer Nitro V15 789J pantalla"
+        },
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-789j-3.jpg",
+          "alt": "Acer Nitro V15 789J teclado"
+        },
+        {
+          "url": "/images/products/acer-nitro-v15-anv15-789j-ficha.jpg",
+          "alt": "Acer Nitro V15 789J Ficha Técnica"
+        }
+      ],
+      "status": "active",
+      "brandId": "brand-acer",
+      "categoryIds": [
+        "cat-laptops"
+      ],
+      "tags": [
+        "acer",
+        "nitro v15",
+        "laptop",
+        "gaming",
+        "rtx 4060",
+        "intel i7 13va"
+      ],
+      "rating": 5,
+      "reviewCount": 38,
+      "featured": true,
+      "createdAt": "2026-02-05T00:00:00.000Z",
+      "updatedAt": "2026-02-24T00:00:00.000Z",
+      "variants": [
+        {
+          "id": "var-acer-nitrov15-789j",
+          "productId": "laptop-acer-nitro-v15-anv15-789j",
+          "sku": "ACER-NITRO-V15-ANV15-51-789J",
+          "name": "16GB RAM / 512GB SSD / RTX 4060",
+          "price": 1140000,
+          "currency": "Bs.",
+          "inventory": {
+            "quantity": 3,
+            "trackInventory": true,
+            "allowBackorder": false
+          },
+          "options": [
+            {
+              "name": "Configuración",
+              "value": "i7-13620H + RTX 4060"
+            }
+          ],
+          "images": [
+            {
+              "url": "/images/products/acer-nitro-v15-anv15-789j-1.jpg",
+              "alt": "Acer Nitro V15 ANV15-51-789J"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-pc-gamer",
       "name": "PC Gamer Ensamblado Ryzen 7 7800X3D + RTX 4070 Ti",
       "slug": "pc-gamer-ryzen-7-rtx-4070-ti",
       "description": "El setup definitivo para 1440p y 4K: AMD Ryzen 7 7800X3D, RTX 4070 Ti Super 16GB, 32GB RAM DDR5 6000MHz, 2TB SSD NVMe Gen4.",
-      "body": "<p>Computadora armada y testeada profesionalmente. Incluye refrigeración líquida de 360mm, fuente modular de 850W 80 Plus Gold y gabinete con flujo de aire optimizado y cristal templado.</p>",
+      "body": "<p>Computadora armada y testeada profesionalmente por Dizvo Systems. Incluye refrigeración líquida de 360mm y fuente modular de 850W 80 Plus Gold.</p>",
       "images": [
         {
           "url": "/images/products/placeholder.svg",
@@ -283,17 +433,16 @@
       ],
       "rating": 5,
       "reviewCount": 19,
-      "featured": true,
+      "featured": false,
       "createdAt": "2026-01-10T00:00:00.000Z",
       "updatedAt": "2026-02-12T00:00:00.000Z",
       "variants": [
         {
-          "id": "var-4-1",
-          "productId": "prod-4",
+          "id": "var-pcg-1",
+          "productId": "prod-pc-gamer",
           "sku": "PCG-R7-4070TI-32GB",
-          "name": "Configuración Base 32GB RAM",
-          "price": 219900,
-          "compareAtPrice": 239900,
+          "name": "32GB RAM / 2TB SSD",
+          "price": 1520000,
           "currency": "Bs.",
           "inventory": {
             "quantity": 6,
@@ -316,69 +465,11 @@
       ]
     },
     {
-      "id": "prod-5",
-      "name": "Computadora de Oficina Intel Core i7 32GB RAM",
-      "slug": "computadora-oficina-intel-core-i7",
-      "description": "Equipo de escritorio ideal para arquitectura, desarrollo, diseño y multitarea intensiva. 1TB SSD + Windows 11 Pro.",
-      "body": "<p>Computadora compacta y silenciosa con procesador Intel Core i7 de 14va generación, conectividad Wi-Fi 6E y puertos USB-C de alta velocidad para máxima productividad empresarial.</p>",
-      "images": [
-        {
-          "url": "/images/products/placeholder.svg",
-          "alt": "Computadora de Oficina i7"
-        }
-      ],
-      "status": "active",
-      "brandId": "brand-lenovo",
-      "categoryIds": [
-        "cat-computadoras"
-      ],
-      "tags": [
-        "computadora",
-        "oficina",
-        "intel",
-        "desktop",
-        "productividad"
-      ],
-      "rating": 4.6,
-      "reviewCount": 22,
-      "featured": false,
-      "createdAt": "2026-01-28T00:00:00.000Z",
-      "updatedAt": "2026-02-18T00:00:00.000Z",
-      "variants": [
-        {
-          "id": "var-5-1",
-          "productId": "prod-5",
-          "sku": "PC-WORK-I7-32GB",
-          "name": "Intel i7 / 32GB RAM / 1TB SSD",
-          "price": 89900,
-          "compareAtPrice": 99900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 14,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Gabinete",
-              "value": "Mid Tower Silencioso"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "PC Oficina i7"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "prod-6",
+      "id": "prod-gpu-rtx4070s",
       "name": "Tarjeta de Video NVIDIA GeForce RTX 4070 Super 12GB",
       "slug": "tarjeta-de-video-nvidia-rtx-4070-super-12gb",
       "description": "Arquitectura Ada Lovelace con trazado de rayos completo, DLSS 3.5 con generación de fotogramas y 12GB GDDR6X.",
-      "body": "<p>La <strong>GeForce RTX 4070 SUPER</strong> ofrece un salto generacional masivo con 7,168 núcleos CUDA y rendimiento líder en eficiencia energética para jugar en 1440p con los ajustes gráficos al máximo.</p>",
+      "body": "<p>La GeForce RTX 4070 SUPER ofrece 7,168 núcleos CUDA y rendimiento líder para jugar en 1440p con los ajustes gráficos al máximo.</p>",
       "images": [
         {
           "url": "/images/products/placeholder.svg",
@@ -394,22 +485,20 @@
         "componentes",
         "gpu",
         "nvidia",
-        "rtx 4070 super",
-        "tarjeta grafica"
+        "rtx 4070 super"
       ],
       "rating": 4.9,
       "reviewCount": 52,
-      "featured": true,
+      "featured": false,
       "createdAt": "2026-02-01T00:00:00.000Z",
       "updatedAt": "2026-02-20T00:00:00.000Z",
       "variants": [
         {
-          "id": "var-6-1",
-          "productId": "prod-6",
+          "id": "var-gpu-4070s",
+          "productId": "prod-gpu-rtx4070s",
           "sku": "GPU-NV-4070S-12G",
           "name": "Edición Dual Fan 12GB",
-          "price": 59900,
-          "compareAtPrice": 64900,
+          "price": 495000,
           "currency": "Bs.",
           "inventory": {
             "quantity": 18,
@@ -432,11 +521,11 @@
       ]
     },
     {
-      "id": "prod-7",
+      "id": "prod-cpu-7800x3d",
       "name": "Procesador AMD Ryzen 7 7800X3D (AM5)",
       "slug": "procesador-amd-ryzen-7-7800x3d",
       "description": "El procesador gaming número 1 del mundo. 8 núcleos, 16 hilos, arquitectura Zen 4 y 96MB de 3D V-Cache.",
-      "body": "<p>Con la tecnología AMD 3D V-Cache de segunda generación, el <strong>Ryzen 7 7800X3D</strong> ofrece tasas de cuadros por segundo insuperables y una eficiencia energética extraordinaria en socket AM5.</p>",
+      "body": "<p>Con tecnología AMD 3D V-Cache, ofrece tasas de cuadros por segundo insuperables y una eficiencia energética extraordinaria.</p>",
       "images": [
         {
           "url": "/images/products/placeholder.svg",
@@ -452,22 +541,20 @@
         "componentes",
         "cpu",
         "amd",
-        "ryzen",
-        "procesador"
+        "ryzen 7"
       ],
       "rating": 5,
       "reviewCount": 68,
-      "featured": true,
+      "featured": false,
       "createdAt": "2026-01-05T00:00:00.000Z",
       "updatedAt": "2026-02-14T00:00:00.000Z",
       "variants": [
         {
-          "id": "var-7-1",
-          "productId": "prod-7",
+          "id": "var-cpu-7800x3d",
+          "productId": "prod-cpu-7800x3d",
           "sku": "CPU-AMD-R7-7800X3D",
-          "name": "Box (Socket AM5)",
-          "price": 43900,
-          "compareAtPrice": 48900,
+          "name": "Box Socket AM5",
+          "price": 310000,
           "currency": "Bs.",
           "inventory": {
             "quantity": 25,
@@ -490,127 +577,11 @@
       ]
     },
     {
-      "id": "prod-8",
-      "name": "Memoria RAM Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz",
-      "slug": "memoria-ram-corsair-vengeance-ddr5-32gb",
-      "description": "Kit dual channel optimizado para perfiles AMD EXPO e Intel XMP 3.0 con latencia CL30 y disipador de aluminio.",
-      "body": "<p>Velocidades de hasta 6000MT/s para exprimir el rendimiento de tu procesador y garantizar la máxima estabilidad en multitarea y cargas pesadas.</p>",
-      "images": [
-        {
-          "url": "/images/products/placeholder.svg",
-          "alt": "Corsair Vengeance DDR5 32GB"
-        }
-      ],
-      "status": "active",
-      "brandId": "brand-corsair",
-      "categoryIds": [
-        "cat-componentes"
-      ],
-      "tags": [
-        "componentes",
-        "ram",
-        "corsair",
-        "ddr5",
-        "memoria"
-      ],
-      "rating": 4.8,
-      "reviewCount": 30,
-      "featured": false,
-      "createdAt": "2026-01-18T00:00:00.000Z",
-      "updatedAt": "2026-02-10T00:00:00.000Z",
-      "variants": [
-        {
-          "id": "var-8-1",
-          "productId": "prod-8",
-          "sku": "RAM-COR-DDR5-32G-6000",
-          "name": "Negro - CL30 6000MHz",
-          "price": 11900,
-          "compareAtPrice": 13900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 30,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Color",
-              "value": "Negro"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "Corsair Vengeance DDR5"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "prod-9",
-      "name": "SSD NVMe M.2 Kingston KC3000 2TB PCIe 4.0",
-      "slug": "ssd-nvme-kingston-kc3000-2tb",
-      "description": "Lecturas secuenciales de hasta 7000MB/s y escrituras de 7000MB/s con disipador térmico de aluminio y grafeno.",
-      "body": "<p>Ideal para reducir a cero los tiempos de carga en juegos y manejar transferencias de archivos masivos en segundos.</p>",
-      "images": [
-        {
-          "url": "/images/products/placeholder.svg",
-          "alt": "Kingston KC3000 2TB"
-        }
-      ],
-      "status": "active",
-      "brandId": "brand-kingston",
-      "categoryIds": [
-        "cat-componentes"
-      ],
-      "tags": [
-        "componentes",
-        "ssd",
-        "almacenamiento",
-        "kingston",
-        "nvme"
-      ],
-      "rating": 4.9,
-      "reviewCount": 45,
-      "featured": false,
-      "createdAt": "2026-01-22T00:00:00.000Z",
-      "updatedAt": "2026-02-08T00:00:00.000Z",
-      "variants": [
-        {
-          "id": "var-9-1",
-          "productId": "prod-9",
-          "sku": "SSD-KNG-KC3000-2TB",
-          "name": "Capacidad 2TB",
-          "price": 15400,
-          "compareAtPrice": 17900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 20,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Capacidad",
-              "value": "2TB"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "Kingston KC3000 2TB"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "prod-10",
+      "id": "prod-monitor-asus-27",
       "name": "Monitor Gaming ASUS TUF 27'' QHD 180Hz Fast IPS",
       "slug": "monitor-gaming-asus-tuf-27-qhd-180hz",
       "description": "Resolución 2560x1440 (2K), tiempo de respuesta de 1ms GtG, compatibilidad FreeSync y G-Sync, HDR10.",
-      "body": "<p>Panel Fast IPS con colores vívidos y ángulo de visión de 178°. Soporte totalmente ergonómico con ajuste de altura, inclinación y giro vertical de 90°.</p>",
+      "body": "<p>Panel Fast IPS con colores vívidos y ángulo de visión de 178°. Soporte totalmente ergonómico con ajuste de altura.</p>",
       "images": [
         {
           "url": "/images/products/placeholder.svg",
@@ -631,17 +602,16 @@
       ],
       "rating": 4.8,
       "reviewCount": 39,
-      "featured": true,
+      "featured": false,
       "createdAt": "2026-01-12T00:00:00.000Z",
       "updatedAt": "2026-02-16T00:00:00.000Z",
       "variants": [
         {
-          "id": "var-10-1",
-          "productId": "prod-10",
+          "id": "var-mon-asus27",
+          "productId": "prod-monitor-asus-27",
           "sku": "MON-ASUS-VG27AQ3A",
           "name": "27 Pulgadas QHD 180Hz",
-          "price": 27900,
-          "compareAtPrice": 32900,
+          "price": 210000,
           "currency": "Bs.",
           "inventory": {
             "quantity": 10,
@@ -664,69 +634,11 @@
       ]
     },
     {
-      "id": "prod-11",
-      "name": "Teclado Mecánico Logitech G PRO X TKL Inalámbrico",
-      "slug": "teclado-mecanico-logitech-g-pro-x-tkl",
-      "description": "Formato Tenkeyless (80%) diseñado para esports con tecnología LIGHTSPEED inalámbrica, switches táctiles GX Brown y RGB LIGHTSYNC.",
-      "body": "<p>Creado en colaboración con profesionales del juego competitivo para garantizar máxima precisión, fiabilidad inalámbrica y portabilidad con estuche incluido.</p>",
-      "images": [
-        {
-          "url": "/images/products/placeholder.svg",
-          "alt": "Teclado Logitech G PRO X"
-        }
-      ],
-      "status": "active",
-      "brandId": "brand-logitech",
-      "categoryIds": [
-        "cat-perifericos"
-      ],
-      "tags": [
-        "perifericos",
-        "teclado",
-        "logitech",
-        "mecanico",
-        "inalambrico"
-      ],
-      "rating": 4.7,
-      "reviewCount": 26,
-      "featured": false,
-      "createdAt": "2026-01-15T00:00:00.000Z",
-      "updatedAt": "2026-02-05T00:00:00.000Z",
-      "variants": [
-        {
-          "id": "var-11-1",
-          "productId": "prod-11",
-          "sku": "KB-LOG-GPRO-TKL-B",
-          "name": "Switches GX Brown Tactile",
-          "price": 17900,
-          "compareAtPrice": 19900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 15,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Switch",
-              "value": "Brown Tactile"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "Logitech G PRO X TKL"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "prod-12",
-      "name": "Mouse Gamer Logitech G502 X LIGHTSPEED",
+      "id": "prod-mouse-g502x",
+      "name": "Mouse Gamer Logitech G502 X LIGHTSPEED Inalámbrico",
       "slug": "mouse-gamer-logitech-g502-x-lightspeed",
       "description": "Switches híbridos óptico-mecánicos LIGHTFORCE, sensor HERO 25K de precisión submicrónica y batería de hasta 140 horas.",
-      "body": "<p>El rediseño del ratón gaming más popular del mundo: peso reducido a 89 gramos, rueda de desplazamiento de modo dual y compatibilidad con carga inalámbrica POWERPLAY.</p>",
+      "body": "<p>Rediseño del ratón gaming más popular del mundo: peso reducido a 89 gramos y rueda de modo dual.</p>",
       "images": [
         {
           "url": "/images/products/placeholder.svg",
@@ -742,22 +654,20 @@
         "perifericos",
         "mouse",
         "logitech",
-        "gamer",
         "inalambrico"
       ],
       "rating": 4.9,
       "reviewCount": 57,
-      "featured": true,
+      "featured": false,
       "createdAt": "2026-01-10T00:00:00.000Z",
       "updatedAt": "2026-02-11T00:00:00.000Z",
       "variants": [
         {
-          "id": "var-12-1",
-          "productId": "prod-12",
+          "id": "var-mouse-g502x",
+          "productId": "prod-mouse-g502x",
           "sku": "MOU-LOG-G502X-BLK",
-          "name": "Negro",
-          "price": 12900,
-          "compareAtPrice": 14900,
+          "name": "Negro Inalámbrico",
+          "price": 92000,
           "currency": "Bs.",
           "inventory": {
             "quantity": 22,
@@ -776,48 +686,28 @@
               "alt": "Logitech G502 X Negro"
             }
           ]
-        },
-        {
-          "id": "var-12-2",
-          "productId": "prod-12",
-          "sku": "MOU-LOG-G502X-WHT",
-          "name": "Blanco",
-          "price": 12900,
-          "compareAtPrice": 14900,
-          "currency": "Bs.",
-          "inventory": {
-            "quantity": 14,
-            "trackInventory": true,
-            "allowBackorder": false
-          },
-          "options": [
-            {
-              "name": "Color",
-              "value": "Blanco"
-            }
-          ],
-          "images": [
-            {
-              "url": "/images/products/placeholder.svg",
-              "alt": "Logitech G502 X Blanco"
-            }
-          ]
         }
       ]
     }
   ],
   "brands": [
     {
+      "id": "brand-hp",
+      "name": "HP",
+      "slug": "hp",
+      "description": "Portátiles gamer y profesionales de alto nivel: serie HP Victus y OMEN."
+    },
+    {
+      "id": "brand-acer",
+      "name": "Acer",
+      "slug": "acer",
+      "description": "Potencia gaming accesible y de vanguardia: series Acer Nitro 5 y Nitro V15."
+    },
+    {
       "id": "brand-asus",
       "name": "ASUS",
       "slug": "asus",
-      "description": "Líder global en laptops gaming Republic of Gamers, componentes y monitores de alto desempeño."
-    },
-    {
-      "id": "brand-lenovo",
-      "name": "Lenovo",
-      "slug": "lenovo",
-      "description": "Portátiles confiables y de máximo rendimiento: series Legion, ThinkPad e IdeaPad."
+      "description": "Líder global en componentes y monitores de alto desempeño."
     },
     {
       "id": "brand-nvidia",
@@ -835,19 +725,19 @@
       "id": "brand-corsair",
       "name": "Corsair",
       "slug": "corsair",
-      "description": "Hardware para entusiastas: memorias RAM ultrarrápidas, fuentes certificadas y refrigeración líquida."
+      "description": "Hardware para entusiastas: memorias RAM ultrarrápidas y fuentes certificadas."
     },
     {
       "id": "brand-logitech",
       "name": "Logitech",
       "slug": "logitech",
-      "description": "Periféricos inalámbricos y accesorios galardonados por su precisión, ergonomía y durabilidad."
+      "description": "Periféricos inalámbricos y accesorios galardonados por su precisión y durabilidad."
     },
     {
       "id": "brand-kingston",
       "name": "Kingston",
       "slug": "kingston",
-      "description": "Especialistas mundiales en memorias RAM y unidades de almacenamiento de estado sólido (SSD)."
+      "description": "Especialistas mundiales en memorias RAM y unidades SSD ultrarrápidas."
     }
   ]
 }

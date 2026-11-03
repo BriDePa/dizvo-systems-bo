@@ -8,21 +8,22 @@ export const siteConfig = {
   name: "Dizvo Systems",
   tagline: "Laptops, Computadoras y Componentes de Hardware",
   description:
-    "Dizvo Systems — Tu empresa de confianza para laptops, computadoras de alto rendimiento, componentes de hardware y soluciones tecnológicas.",
+    "Dizvo Systems — Tienda online especializada en laptops gaming, computadoras y componentes. Realizamos envíos a nivel nacional y entregas en puntos acordados.",
 
   // Barra de anuncios superior (dejar en "" para ocultar)
-  announcement: "¡Bienvenidos a Dizvo Systems! Calidad, garantía y rendimiento en cada equipo.",
+  announcement: "¡Envíos a todo el país y entregas personales en puntos acordados! Consulta por WhatsApp al 65991669.",
 
   // URLs
   url: process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000",
 
-  // Contacto
+  // Contacto y WhatsApp
   contact: {
     email: "contacto@dizvosystems.com",
-    phone: "+591 70000000", // Puedes cambiarlo por tu número de teléfono / WhatsApp
-    whatsapp: "+59170000000", // Enlace directo a WhatsApp
+    phone: "+591 65991669",
+    whatsapp: "59165991669",
+    displayWhatsapp: "65991669",
     address: {
-      street: "",
+      street: "Entregas personales en puntos acordados / Envíos a todo el país",
       suite: "",
       city: "",
       state: "",
@@ -40,7 +41,7 @@ export const siteConfig = {
   },
 
   // Envíos e impuestos
-  freeShippingThreshold: 50000, // en centavos (Bs. 500,00)
+  freeShippingThreshold: 500000, // en centavos (Bs. 5.000,00)
   taxRate: 0.13,
 
   // Moneda y localización
