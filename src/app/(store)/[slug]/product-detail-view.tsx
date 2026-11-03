@@ -252,7 +252,7 @@ export function ProductDetailView({
               <span>Pedir / Consultar por WhatsApp</span>
             </a>
             <p className="text-center text-xs text-muted-foreground">
-              ⚡ Entregas personales en puntos acordados y envíos asegurados a todo el país
+              Entregas personales en puntos acordados y envíos asegurados a todo el país
             </p>
           </div>
           <Separator className="my-6" />

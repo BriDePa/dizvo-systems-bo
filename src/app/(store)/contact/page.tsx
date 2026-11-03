@@ -39,7 +39,7 @@ export default function ContactPage() {
 
       {/* Banner sin tienda física */}
       <div className="mt-8 rounded-xl border border-blue-100 bg-blue-50/60 p-4 text-sm text-blue-950 sm:p-5">
-        <p className="font-semibold text-blue-900">📍 Nota sobre nuestra modalidad de atención:</p>
+        <p className="font-semibold text-blue-900">Nota sobre nuestra modalidad de atención:</p>
         <p className="mt-1 text-blue-800/90 leading-relaxed">
           No contamos con tienda física. Operamos 100% de manera digital para ofrecerte los mejores precios en hardware y laptops. 
           Realizamos <strong>entregas personales en puntos acordados</strong> y <strong>envíos asegurados a todo el país</strong>.

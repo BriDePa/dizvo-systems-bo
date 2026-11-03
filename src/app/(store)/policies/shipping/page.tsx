@@ -12,7 +12,7 @@ export default function ShippingPolicyPage() {
       <h1 className="text-3xl font-bold tracking-tight">Modalidad de Entregas y Envíos</h1>
       <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
         <div className="rounded-xl border border-blue-100 bg-blue-50/60 p-4 text-sm text-blue-950">
-          <p className="font-semibold text-blue-900">📍 Sin tienda física:</p>
+          <p className="font-semibold text-blue-900">Sin tienda física:</p>
           <p className="mt-1 text-blue-800/90 leading-relaxed">
             En <strong>{siteConfig.name}</strong> operamos como tienda en línea directa. No contamos con sucursal o local comercial abierto al público, lo que nos permite ofrecerte precios altamente competitivos y atención 100% personalizada por WhatsApp.
           </p>

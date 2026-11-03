@@ -24,7 +24,7 @@ function validateEnv() {
 
   if (!result.success) {
     console.error(
-      "❌ Invalid environment variables:",
+      "[ERROR] Variables de entorno invalidas:",
       result.error.flatten().fieldErrors
     )
     throw new Error("Invalid environment variables")

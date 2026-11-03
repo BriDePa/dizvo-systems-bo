@@ -33,7 +33,7 @@ export default async function HomePage() {
       <section className="relative flex min-h-[580px] items-center justify-center bg-gradient-to-b from-neutral-100 to-white py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <Badge variant="secondary" className="mb-4">
-            🚀 Envíos a todo el país y entregas personales en puntos acordados
+            Envíos a todo el país y entregas personales en puntos acordados
           </Badge>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-foreground">
             Laptops Gaming y Tecnología en Bolivia
