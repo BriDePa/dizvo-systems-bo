@@ -24,7 +24,7 @@ export default async function StoreLayout({
       </a>
       <AnnouncementBar />
       <Header categories={categories} />
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className="flex-1 w-full overflow-x-hidden">
         {children}
       </main>
       <Footer />

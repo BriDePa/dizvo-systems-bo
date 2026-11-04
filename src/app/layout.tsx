@@ -60,7 +60,7 @@ export default async function RootLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={`${inter.variable} h-full antialiased`}>
+    <html lang={locale} className={`${inter.variable} h-full antialiased overflow-x-hidden`}>
       <body className="min-h-full flex flex-col bg-white overflow-x-hidden">
         <script
           type="application/ld+json"

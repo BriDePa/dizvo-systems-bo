@@ -18,12 +18,12 @@ export default async function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative flex min-h-[440px] sm:min-h-[540px] items-center justify-center bg-gradient-to-b from-neutral-100 to-white py-12 sm:py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center">
-          <Badge variant="secondary" className="mb-4 text-xs sm:text-sm font-medium py-1 px-3">
+      <section className="relative flex min-h-[440px] sm:min-h-[540px] items-center justify-center bg-gradient-to-b from-neutral-100 to-white py-12 sm:py-16 overflow-hidden">
+        <div className="mx-auto max-w-3xl px-4 text-center w-full">
+          <div className="mb-4 inline-block max-w-full rounded-full bg-neutral-100 border border-neutral-200 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-neutral-700 text-center leading-normal">
             Envíos a todo el país y entregas personales en puntos acordados
-          </Badge>
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-foreground leading-tight">
+          </div>
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground leading-tight break-words">
             Laptops Gaming y Tecnología en Bolivia
           </h1>
           <p className="mt-4 sm:mt-6 text-sm sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
