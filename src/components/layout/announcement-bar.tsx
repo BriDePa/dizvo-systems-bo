@@ -22,14 +22,14 @@ export function AnnouncementBar() {
   if (!mounted || dismissed || !siteConfig.announcement) return null
 
   return (
-    <div className="relative bg-foreground px-4 py-2.5 text-center text-xs font-medium text-background sm:text-sm">
-      <p>{siteConfig.announcement}</p>
+    <div className="relative bg-foreground px-4 pr-10 py-2.5 text-center text-xs font-medium text-background sm:text-sm sm:pr-4">
+      <p className="leading-snug">{siteConfig.announcement}</p>
       <button
         onClick={handleDismiss}
-        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-sm p-1 text-background/60 hover:text-background"
-        aria-label="Dismiss announcement"
+        className="absolute right-2 top-1/2 -translate-y-1/2 rounded-sm p-1.5 text-background/70 hover:text-background"
+        aria-label="Cerrar anuncio"
       >
-        <X className="h-3.5 w-3.5" />
+        <X className="h-4 w-4" />
       </button>
     </div>
   )

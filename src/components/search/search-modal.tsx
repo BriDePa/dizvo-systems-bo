@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback, useRef, type KeyboardEvent as ReactKeyboardEvent } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Search, X, ArrowRight } from "lucide-react"
@@ -14,11 +14,11 @@ const allProducts = data.products as Product[]
 
 const popularSearches = [
   "Laptops",
-  "RTX 4070",
-  "Ryzen 7",
-  "Monitores",
-  "RAM DDR5",
-  "Mouse Gamer",
+  "HP Victus",
+  "Acer Nitro",
+  "RTX 4060",
+  "RTX 4050",
+  "Intel i7",
 ]
 
 interface SearchModalProps {
@@ -56,7 +56,6 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") handleClose()
 
-      // Focus trap
       if (e.key === "Tab" && modalRef.current) {
         const focusable = modalRef.current.querySelectorAll<HTMLElement>(
           'a[href], button, input, [tabindex]:not([tabindex="-1"])'
@@ -90,38 +89,53 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const hasQuery = query.trim().length > 0
 
   return (
-    <div className="fixed inset-0 z-50">
+    <div className="fixed inset-0 z-50 overflow-y-auto">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity"
+        className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
         onClick={handleClose}
         aria-hidden="true"
       />
 
       {/* Modal */}
-      <div ref={modalRef} className="relative mx-auto mt-[10vh] w-full max-w-2xl px-4" role="dialog" aria-modal="true" aria-label="Buscar productos">
-        <div className="overflow-hidden rounded-xl bg-white shadow-2xl">
+      <div
+        ref={modalRef}
+        className="relative mx-auto mt-3 sm:mt-[10vh] w-full max-w-2xl px-3 sm:px-4"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Buscar productos"
+      >
+        <div className="overflow-hidden rounded-2xl bg-white shadow-2xl border border-neutral-100">
           {/* Input */}
-          <div className="flex items-center border-b px-4">
+          <div className="flex items-center border-b px-4 py-1">
             <Search className="h-5 w-5 shrink-0 text-muted-foreground" />
             <input
               ref={inputRef}
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Buscar productos (ej. Laptop, RTX, Ryzen)..."
+              placeholder="Buscar laptops, procesadores, gráficas..."
               aria-label="Buscar productos"
-              className="flex-1 border-0 bg-transparent px-4 py-4 text-lg outline-none placeholder:text-muted-foreground/60"
+              className="flex-1 border-0 bg-transparent px-3 py-3.5 text-base outline-none placeholder:text-muted-foreground/60"
             />
             {hasQuery ? (
               <button
                 onClick={() => setQuery("")}
-                className="rounded-md p-1 text-muted-foreground hover:text-foreground"
+                className="rounded-md p-1.5 text-muted-foreground hover:bg-neutral-100 hover:text-foreground"
                 aria-label="Limpiar búsqueda"
               >
                 <X className="h-4 w-4" />
               </button>
             ) : (
+              <button
+                onClick={handleClose}
+                className="rounded-md p-1.5 text-muted-foreground hover:bg-neutral-100 hover:text-foreground sm:hidden"
+                aria-label="Cerrar"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            )}
+            {!hasQuery && (
               <kbd className="hidden rounded border bg-neutral-100 px-1.5 py-0.5 text-xs text-muted-foreground sm:inline">
                 ESC
               </kbd>
@@ -129,9 +143,9 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           </div>
 
           {/* Results */}
-          <div className="max-h-[60vh] overflow-y-auto">
+          <div className="max-h-[65vh] overflow-y-auto">
             {hasQuery && results.length > 0 && (
-              <div className="p-2">
+              <div className="p-2 space-y-1">
                 {results.map((product) => {
                   const variant = product.variants[0]
                   return (
@@ -139,19 +153,19 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       key={product.id}
                       href={`/${product.slug}`}
                       onClick={handleClose}
-                      className="flex items-center gap-4 rounded-lg p-3 transition-colors hover:bg-neutral-50"
+                      className="flex items-center gap-3 rounded-xl p-2.5 transition-colors hover:bg-neutral-50 active:bg-neutral-100"
                     >
-                      <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-md bg-neutral-100">
+                      <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-neutral-100 border">
                         <Image
                           src={product.images[0]?.url ?? PLACEHOLDER_IMAGE}
                           alt={product.images[0]?.alt ?? product.name}
                           fill
-                          className="object-cover"
+                          className="object-contain p-1"
                           sizes="56px"
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium truncate">
+                        <p className="text-sm font-semibold truncate text-foreground">
                           {product.name}
                         </p>
                         <StarRating
@@ -160,42 +174,39 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                           size="sm"
                         />
                       </div>
-                      <span className="shrink-0 text-sm font-medium">
-                        {variant && formatPrice(variant.price, variant.currency)}
-                      </span>
+                      {variant && (
+                        <span className="text-xs sm:text-sm font-bold text-foreground shrink-0">
+                          {formatPrice(variant.price, variant.currency)}
+                        </span>
+                      )}
                     </Link>
                   )
                 })}
-                <Link
-                  href={`/search?q=${encodeURIComponent(query)}`}
-                  onClick={handleClose}
-                  className="mt-1 flex items-center justify-center gap-2 rounded-lg p-3 text-sm text-muted-foreground transition-colors hover:bg-neutral-50 hover:text-foreground"
-                >
-                  Ver todos los resultados
-                  <ArrowRight className="h-3 w-3" />
-                </Link>
               </div>
             )}
 
             {hasQuery && results.length === 0 && (
-              <div className="px-4 py-12 text-center">
-                <p className="text-sm text-muted-foreground">
-                  No se encontraron resultados para &quot;{query}&quot;
+              <div className="py-12 text-center">
+                <p className="text-sm font-medium text-foreground">
+                  No se encontraron resultados para &ldquo;{query}&rdquo;
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Intenta buscar por modelo, marca (HP, Acer) o componente.
                 </p>
               </div>
             )}
 
             {!hasQuery && (
-              <div className="p-4">
-                <p className="mb-3 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                  Búsquedas Populares
+              <div className="p-4 sm:p-5">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Búsquedas populares
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="mt-3 flex flex-wrap gap-2">
                   {popularSearches.map((term) => (
                     <button
                       key={term}
                       onClick={() => setQuery(term)}
-                      className="rounded-full border border-border px-3 py-1.5 text-sm transition-colors hover:border-foreground hover:bg-neutral-50"
+                      className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-neutral-100 active:bg-neutral-200"
                     >
                       {term}
                     </button>
@@ -204,6 +215,20 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               </div>
             )}
           </div>
+
+          {/* Footer */}
+          {hasQuery && results.length > 0 && (
+            <div className="border-t bg-neutral-50 px-4 py-2.5">
+              <Link
+                href={`/shop?q=${encodeURIComponent(query)}`}
+                onClick={handleClose}
+                className="flex items-center justify-between text-xs font-semibold text-primary hover:underline"
+              >
+                <span>Ver todos los resultados para &ldquo;{query}&rdquo;</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>

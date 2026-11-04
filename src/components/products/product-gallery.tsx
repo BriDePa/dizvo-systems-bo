@@ -11,45 +11,45 @@ interface ProductGalleryProps {
   productName?: string
 }
 
-export function ProductGallery({ images, productName = "Product" }: ProductGalleryProps) {
+export function ProductGallery({ images, productName = "Producto" }: ProductGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const currentImage = images[selectedIndex]
 
   return (
-    <div className="flex flex-col gap-4">
-      {/* Main image */}
-      <div className="relative aspect-square overflow-hidden rounded-lg bg-neutral-100">
+    <div className="flex flex-col gap-3 sm:gap-4">
+      {/* Imagen Principal */}
+      <div className="relative aspect-square sm:aspect-[4/3] lg:aspect-square w-full overflow-hidden rounded-xl bg-neutral-100 border shadow-xs">
         <Image
           src={currentImage?.url ?? PLACEHOLDER_IMAGE}
           alt={currentImage?.alt ?? productName}
           fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="object-contain p-2 sm:p-4"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
           priority
         />
       </div>
 
-      {/* Thumbnails */}
+      {/* Miniaturas con scroll horizontal táctil para celular */}
       {images.length > 1 && (
-        <div className="flex gap-2">
+        <div className="flex gap-2.5 overflow-x-auto pb-2 pt-1 scrollbar-none -mx-1 px-1 touch-pan-x">
           {images.map((image, index) => (
             <button
               key={index}
               onClick={() => setSelectedIndex(index)}
               className={cn(
-                "relative h-16 w-16 overflow-hidden rounded-md border-2 bg-neutral-100 transition-colors",
+                "relative h-16 w-16 sm:h-20 sm:w-20 shrink-0 overflow-hidden rounded-lg border-2 bg-neutral-50 transition-all",
                 selectedIndex === index
-                  ? "border-foreground"
-                  : "border-transparent hover:border-neutral-300"
+                  ? "border-primary ring-2 ring-primary/20"
+                  : "border-neutral-200 hover:border-neutral-400 opacity-80 hover:opacity-100"
               )}
-              aria-label={`View image ${index + 1}`}
+              aria-label={`Ver imagen ${index + 1}`}
             >
               <Image
                 src={image.url ?? PLACEHOLDER_IMAGE}
-                alt={image.alt ?? `${productName} thumbnail ${index + 1}`}
+                alt={image.alt ?? `${productName} miniatura ${index + 1}`}
                 fill
-                className="object-cover"
-                sizes="64px"
+                className="object-contain p-1"
+                sizes="(max-width: 640px) 64px, 80px"
               />
             </button>
           ))}

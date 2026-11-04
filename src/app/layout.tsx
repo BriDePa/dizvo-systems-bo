@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages } from "next-intl/server"
@@ -10,6 +10,13 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 })
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#ffffff",
+}
 
 export const metadata: Metadata = {
   title: {
@@ -54,7 +61,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-white">
+      <body className="min-h-full flex flex-col bg-white overflow-x-hidden">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

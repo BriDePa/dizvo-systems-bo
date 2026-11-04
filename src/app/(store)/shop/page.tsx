@@ -66,11 +66,11 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
   if (searchQuery) currentParams.q = searchQuery
 
   return (
-    <div className="mx-auto max-w-[1440px] px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-[1440px] px-3.5 py-6 sm:px-6 sm:py-8 lg:px-8">
       {/* Header */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
             {categorySlug
               ? categories.find((c) => c.slug === categorySlug)?.name ??
                 "Catálogo"
@@ -78,52 +78,53 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
                 ? `Resultados para "${searchQuery}"`
                 : "Todos los Productos"}
           </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
+          <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
             {pagination.total} {pagination.total === 1 ? "producto encontrado" : "productos encontrados"}
           </p>
         </div>
 
-        <Suspense>
-          <SortDropdown currentSort={sortKey} />
-        </Suspense>
+        <div className="flex items-center justify-between sm:justify-end gap-2">
+          <span className="text-xs text-muted-foreground sm:hidden">Ordenar:</span>
+          <Suspense>
+            <SortDropdown currentSort={sortKey} />
+          </Suspense>
+        </div>
       </div>
 
-      {/* Category filter pills */}
-      <div className="mt-6 flex flex-wrap gap-2">
+      {/* Category filter pills con scroll horizontal en móvil */}
+      <div className="mt-5 flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none -mx-1 px-1 touch-pan-x sm:flex-wrap">
         <Link
           href="/shop"
-          className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+          className={`shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors ${
             !categorySlug
               ? "border-foreground bg-foreground text-background"
-              : "border-border hover:border-foreground"
+              : "border-neutral-200 bg-white text-muted-foreground hover:border-foreground hover:text-foreground"
           }`}
         >
           Todos
         </Link>
-        {categories.map((cat) => {
-          return (
-            <Link
-              key={cat.id}
-              href={`/${cat.slug}`}
-              className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
-                categorySlug === cat.slug
-                  ? "border-foreground bg-foreground text-background"
-                  : "border-border hover:border-foreground"
-              }`}
-            >
-              {cat.name}
-            </Link>
-          )
-        })}
+        {categories.map((cat) => (
+          <Link
+            key={cat.id}
+            href={`/${cat.slug}`}
+            className={`shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors ${
+              categorySlug === cat.slug
+                ? "border-foreground bg-foreground text-background"
+                : "border-neutral-200 bg-white text-muted-foreground hover:border-foreground hover:text-foreground"
+            }`}
+          >
+            {cat.name}
+          </Link>
+        ))}
       </div>
 
       {/* Product Grid */}
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         <ProductGrid products={products} />
       </div>
 
       {/* Pagination */}
-      <div className="mt-12">
+      <div className="mt-10 sm:mt-12">
         <Pagination
           pagination={pagination}
           basePath="/shop"
